@@ -66,7 +66,7 @@ def create_ensemble_model(model4code, model4text):
 def main():
     model = create_ensemble_model(model4code, model4text)
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy', Precision(), Recall()])
-    x_1, x_2, y = get_data("data/detection/spidb")
+    x_1, x_2, y = get_data("data/detection/patchdb")
     x1 = np.array(pad_sequences(x_1, maxlen=100, padding='post', truncating='post'))
     x2 = np.array(pad_sequences(x_2, maxlen=100, padding='post', truncating='post'))
     y = np.array(y)
@@ -76,7 +76,7 @@ def main():
     train_y, test_y,\
     =train_test_split(x1, x2, y, random_state=2024, test_size=0.2)
 
-    checkpoint = ModelCheckpoint(os.path.join('saved_models/detection','temp.weights.h5'), monitor='val_getF1', verbose=1, save_best_only=True, save_weights_only=True, mode='max')
+    checkpoint = ModelCheckpoint(os.path.join('saved_models/detection4patchdb','temp.weights.h5'), monitor='val_getF1', verbose=1, save_best_only=True, save_weights_only=True, mode='max',save_freq="epoch")
     model.fit([train_x1, train_x2], train_y, validation_data=([test_x1,test_x2], test_y),batch_size=32, epochs=10, validation_split=0.2, callbacks=[checkpoint])
     result = model.evaluate([test_x1,test_x2], test_y, verbose=False)
     print(result)

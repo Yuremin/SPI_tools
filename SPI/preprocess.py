@@ -11,8 +11,8 @@ def generate_embedding(path):
     """
     
     """
-    word2vec4text_model = Word2Vec.load("saved_models/w2v/word2vec4text.model")
-    word2vec4code_model = Word2Vec.load("saved_models/w2v/word2vec4code.model")
+    word2vec4text_model = Word2Vec.load("saved_models/w2v_patchdb/word2vec4text.model")
+    word2vec4code_model = Word2Vec.load("saved_models/w2v_patchdb/word2vec4code.model")
     vocabulary4text = word2vec4text_model.wv.key_to_index
     vocabulary4code = word2vec4code_model.wv.key_to_index
     
@@ -32,7 +32,7 @@ def generate_embedding(path):
             line_sum = 0
             matched_message = re.search(pattern_message, "".join(lines))
             if matched_message: commit_message = matched_message.group(1).strip().split()
-            else: print("nononon") ;break
+            else: print("nononon")
             
             for line in lines:
                 if len(line) <2: continue
@@ -62,4 +62,4 @@ def generate_embedding(path):
 
 
 if __name__ == '__main__':
-    generate_embedding("data/detection/spidb")
+    generate_embedding("data/detection/patchdb")
