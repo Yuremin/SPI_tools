@@ -3,3 +3,6 @@
 **/Data
 **/data
 **/saved_models
+**/*.zip
+**/*.pth
+**/temp
