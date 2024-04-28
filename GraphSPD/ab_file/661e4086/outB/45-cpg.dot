@@ -1,0 +1,19 @@
+digraph ngx_http_upstream_finalize_request
+--------
+1000353,(COLUMN_NUMBER,0),(LINE_NUMBER,102),(COLUMN_NUMBER_END,41),(IS_EXTERNAL,false),(SIGNATURE,static void ngx_http_upstream_finalize_request (ngx_http_request_t *,ngx_http_upstream_t *,ngx_int_t)),(NAME,ngx_http_upstream_finalize_request),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_upstream_finalize_request (ngx_http_request_t *r,ngx_http_upstream_t *u,ngx_int_t rc)),(FULL_NAME,ngx_http_upstream_finalize_request),(LINE_NUMBER_END,103),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/661e4086/b/ngx_http_upstream.c),(METHOD,ngx_http_upstream_finalize_request)
+1000354,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,47),(LINE_NUMBER,102),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000355,(ORDER,2),(CODE,ngx_http_upstream_t *u),(COLUMN_NUMBER,4),(LINE_NUMBER,103),(TYPE_FULL_NAME,ngx_http_upstream_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(PARAM,ngx_http_upstream_t *u)
+1000356,(ORDER,3),(CODE,ngx_int_t rc),(COLUMN_NUMBER,28),(LINE_NUMBER,103),(TYPE_FULL_NAME,ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(PARAM,ngx_int_t rc)
+1000357,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000358,(ORDER,5),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,102),(TYPE_FULL_NAME,static void),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static void)
+--------
+1000353,1000354,AST
+1000353,1000355,AST
+1000353,1000356,AST
+1000353,1000357,AST
+1000353,1000358,AST
+1000353,1000358,CFG
+1000353,1000358,DDG
+1000353,1000354,DDG
+1000353,1000355,DDG
+1000353,1000356,DDG

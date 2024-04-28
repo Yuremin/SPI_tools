@@ -1,7 +1,7 @@
 import os
 from keras.layers import LSTM, Conv1D, GlobalMaxPooling1D, Dense, Input, Concatenate
 from keras.models import Sequential, Model
-from keras.metrics import Precision, Recall
+from keras.metrics import BinaryAccuracy, Precision, Recall, F1Score
 from keras.callbacks import ModelCheckpoint
 from keras.preprocessing.sequence import pad_sequences
 import numpy as np
@@ -20,8 +20,8 @@ def get_data(path):
     file_list = []
     for root, dirs, fs in os.walk(path):
         for f in fs:
-            if f != 'vector.npz':continue
-            file_list.append(os.path.join(root,f))
+            if f == 'vector_spi.npz':
+                file_list.append(os.path.join(root,f))
 
     
     x_1 = []
@@ -63,30 +63,48 @@ def create_ensemble_model(model4code, model4text):
 
 #=================================================================
 
-def main():
+def train(path):
     model = create_ensemble_model(model4code, model4text)
-    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy', Precision(), Recall()])
-    x_1, x_2, y = get_data("data/detection/patchdb")
+    model.summary()
+    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy', Precision(), Recall(), F1Score])
+    x_1, x_2, y = get_data("/Users/min/Code/SPI/MrSPI/data/1000samples_patchdb/train")
     x1 = np.array(pad_sequences(x_1, maxlen=100, padding='post', truncating='post'))
     x2 = np.array(pad_sequences(x_2, maxlen=100, padding='post', truncating='post'))
-    y = np.array(y)
+    y = np.array(y).reshape(-1,1)
 
     train_x1, test_x1,\
     train_x2, test_x2,\
     train_y, test_y,\
     =train_test_split(x1, x2, y, random_state=2024, test_size=0.2)
 
-    checkpoint = ModelCheckpoint(os.path.join('saved_models/detection4patchdb','temp.weights.h5'), monitor='val_getF1', verbose=1, save_best_only=True, save_weights_only=True, mode='max',save_freq="epoch")
-    model.fit([train_x1, train_x2], train_y, validation_data=([test_x1,test_x2], test_y),batch_size=32, epochs=10, validation_split=0.2, callbacks=[checkpoint])
+    checkpoint = ModelCheckpoint(os.path.join('saved_models/detection4patchdb0421-spi','temp.weights.h5'), monitor='f1_score', verbose=1, save_best_only=True, save_weights_only=True, mode='max',save_freq="epoch")
+    model.fit([train_x1, train_x2], train_y, validation_data=([test_x1,test_x2], test_y),batch_size=32, epochs=25, validation_split=0.2, callbacks=[checkpoint])
     result = model.evaluate([test_x1,test_x2], test_y, verbose=False)
     print(result)
-    # Make predictions
-    #predictions = model.predict(X_train[:5])
+  
 
-    # Convert predictions to class labels
-    #predicted_classes = np.argmax(predictions, axis=1)
-    #print(predicted_classes)
+def test(path):
 
+    x_1, x_2, y = get_data(path)
+    x1 = np.array(pad_sequences(x_1, maxlen=100, padding='post', truncating='post'))
+    x2 = np.array(pad_sequences(x_2, maxlen=100, padding='post', truncating='post'))
+    y = np.array(y).reshape(-1,1)
+
+    model = create_ensemble_model(model4code, model4text)
+    model.summary()
+    model.load_weights(os.path.join('saved_models/detection4patchdb0421-spi','temp.weights.h5'))
+    model.compile(loss='binary_crossentropy', optimizer='adam', metrics=[BinaryAccuracy, Precision, Recall, F1Score])
+    eval_results = model.evaluate([x1,x2], y, return_dict=True)
+    print(eval_results)
+
+def main(mode, train_path, test_path):
+    if mode == 1:
+        train(train_path)
+    else:
+        test(test_path)
 
 if __name__ == '__main__':
-    main()
+    mode = 2
+    train_path = "/Users/min/Code/SPI/MrSPI/data/1000samples_patchdb/train"
+    test_path = "/Users/min/Code/SPI/MrSPI/data/1000samples_patchdb/test"
+    main(mode, train_path, test_path)

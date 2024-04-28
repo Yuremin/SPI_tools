@@ -1,0 +1,1118 @@
+digraph ngx_http_upstream_test_next
+--------
+1000586,(COLUMN_NUMBER,0),(LINE_NUMBER,2379),(COLUMN_NUMBER_END,0),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_upstream_test_next (ngx_http_request_t *,ngx_http_upstream_t *)),(NAME,ngx_http_upstream_test_next),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_upstream_test_next (ngx_http_request_t *r,ngx_http_upstream_t *u)),(FULL_NAME,ngx_http_upstream_test_next),(LINE_NUMBER_END,2497),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/661e4086/a/ngx_http_upstream.c),(METHOD,ngx_http_upstream_test_next)
+1000587,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,28),(LINE_NUMBER,2380),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000588,(ORDER,2),(CODE,ngx_http_upstream_t *u),(COLUMN_NUMBER,51),(LINE_NUMBER,2380),(TYPE_FULL_NAME,ngx_http_upstream_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(PARAM,ngx_http_upstream_t *u)
+1000589,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(COLUMN_NUMBER,0),(TYPE_FULL_NAME,void),(LINE_NUMBER,2381),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000590,(TYPE_FULL_NAME,ngx_uint_t),(ORDER,1),(CODE,status),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,status),(LOCAL,status: ngx_uint_t)
+1000591,(TYPE_FULL_NAME,ngx_http_upstream_next_t *),(ORDER,2),(CODE,un),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,un),(LOCAL,un: ngx_http_upstream_next_t *)
+1000592,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,status = u->headers_in.status_n),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2385),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,status = u->headers_in.status_n)
+1000593,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,status),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,ngx_uint_t),(LINE_NUMBER,2385),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,status),(IDENTIFIER,status,status = u->headers_in.status_n)
+1000594,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u->headers_in.status_n),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2385),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,u->headers_in.status_n)
+1000595,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->headers_in),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2385),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->headers_in)
+1000596,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2385),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,status = u->headers_in.status_n)
+1000597,(ORDER,2),(LINE_NUMBER,2385),(ARGUMENT_INDEX,2),(CODE,headers_in),(COLUMN_NUMBER,16),(CANONICAL_NAME,headers_in),(FIELD_IDENTIFIER,headers_in,headers_in)
+1000598,(ORDER,2),(LINE_NUMBER,2385),(ARGUMENT_INDEX,2),(CODE,status_n),(COLUMN_NUMBER,27),(CANONICAL_NAME,status_n),(FIELD_IDENTIFIER,status_n,status_n)
+1000599,(PARSER_TYPE_NAME,ForStatement),(ORDER,4),(LINE_NUMBER,2387),(ARGUMENT_INDEX,4),(CODE,for (un = ngx_http_upstream_next_errors; un->status; un++)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,for (un = ngx_http_upstream_next_errors; un->status; un++),for (un = ngx_http_upstream_next_errors; un->status; un++))
+1000600,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,un = ngx_http_upstream_next_errors),(COLUMN_NUMBER,9),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2387),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,un = ngx_http_upstream_next_errors)
+1000601,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,un),(COLUMN_NUMBER,9),(TYPE_FULL_NAME,ngx_http_upstream_next_t *),(LINE_NUMBER,2387),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,un),(IDENTIFIER,un,un = ngx_http_upstream_next_errors)
+1000602,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_http_upstream_next_errors),(COLUMN_NUMBER,14),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2387),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_http_upstream_next_errors),(IDENTIFIER,ngx_http_upstream_next_errors,un = ngx_http_upstream_next_errors)
+1000603,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,un->status),(COLUMN_NUMBER,45),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2387),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,un->status)
+1000604,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,un),(COLUMN_NUMBER,45),(TYPE_FULL_NAME,ngx_http_upstream_next_t *),(LINE_NUMBER,2387),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,un),(IDENTIFIER,un,for (un = ngx_http_upstream_next_errors; un->status; un++))
+1000605,(ORDER,2),(LINE_NUMBER,2387),(ARGUMENT_INDEX,2),(CODE,status),(COLUMN_NUMBER,49),(CANONICAL_NAME,status),(FIELD_IDENTIFIER,status,status)
+1000606,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,un++),(COLUMN_NUMBER,57),(METHOD_FULL_NAME,<operator>.postIncrement),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2387),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.postIncrement),(<operator>.postIncrement,un++)
+1000607,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,un),(COLUMN_NUMBER,57),(TYPE_FULL_NAME,ngx_http_upstream_next_t *),(LINE_NUMBER,2387),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,un),(IDENTIFIER,un,un++)
+1000608,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(COLUMN_NUMBER,63),(TYPE_FULL_NAME,void),(LINE_NUMBER,2387),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000609,(PARSER_TYPE_NAME,IfStatement),(ORDER,1),(LINE_NUMBER,2389),(ARGUMENT_INDEX,1),(CODE,if (status != un->status)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (status != un->status),if (status != un->status))
+1000610,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,status != un->status),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2389),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,status != un->status)
+1000611,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,status),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_uint_t),(LINE_NUMBER,2389),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,status),(IDENTIFIER,status,status != un->status)
+1000612,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,un->status),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2389),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,un->status)
+1000613,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,un),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ngx_http_upstream_next_t *),(LINE_NUMBER,2389),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,un),(IDENTIFIER,un,status != un->status)
+1000614,(ORDER,2),(LINE_NUMBER,2389),(ARGUMENT_INDEX,2),(CODE,status),(COLUMN_NUMBER,26),(CANONICAL_NAME,status),(FIELD_IDENTIFIER,status,status)
+1000615,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,void),(LINE_NUMBER,2389),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000616,(PARSER_TYPE_NAME,ContinueStatement),(ORDER,1),(LINE_NUMBER,2390),(ARGUMENT_INDEX,1),(CODE,continue;),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,continue;,continue;)
+1000617,(PARSER_TYPE_NAME,IfStatement),(ORDER,2),(LINE_NUMBER,2393),(ARGUMENT_INDEX,2),(CODE,if (u->peer.tries > 1 && (u->conf->next_upstream & un->mask))),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (u->peer.tries > 1 && (u->conf->next_upstream & un->mask)),if (u->peer.tries > 1 && (u->conf->next_upstream & un->mask)))
+1000618,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->peer.tries > 1 && (u->conf->next_upstream & un->mask)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2393),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,u->peer.tries > 1 && (u->conf->next_upstream & un->mask))
+1000619,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->peer.tries > 1),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.greaterThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2393),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.greaterThan),(<operator>.greaterThan,u->peer.tries > 1)
+1000620,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->peer.tries),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2393),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,u->peer.tries)
+1000621,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->peer),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2393),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->peer)
+1000622,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2393),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,u->peer.tries > 1)
+1000623,(ORDER,2),(LINE_NUMBER,2393),(ARGUMENT_INDEX,2),(CODE,peer),(COLUMN_NUMBER,15),(CANONICAL_NAME,peer),(FIELD_IDENTIFIER,peer,peer)
+1000624,(ORDER,2),(LINE_NUMBER,2393),(ARGUMENT_INDEX,2),(CODE,tries),(COLUMN_NUMBER,20),(CANONICAL_NAME,tries),(FIELD_IDENTIFIER,tries,tries)
+1000625,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,1),(COLUMN_NUMBER,28),(TYPE_FULL_NAME,int),(LINE_NUMBER,2393),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,u->peer.tries > 1)
+1000626,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u->conf->next_upstream & un->mask),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.and),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2393),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.and),(<operator>.and,u->conf->next_upstream & un->mask)
+1000627,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->conf->next_upstream),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2393),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->conf->next_upstream)
+1000628,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->conf),(COLUMN_NUMBER,34),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2393),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->conf)
+1000629,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2393),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,u->conf->next_upstream & un->mask)
+1000630,(ORDER,2),(LINE_NUMBER,2393),(ARGUMENT_INDEX,2),(CODE,conf),(COLUMN_NUMBER,37),(CANONICAL_NAME,conf),(FIELD_IDENTIFIER,conf,conf)
+1000631,(ORDER,2),(LINE_NUMBER,2393),(ARGUMENT_INDEX,2),(CODE,next_upstream),(COLUMN_NUMBER,43),(CANONICAL_NAME,next_upstream),(FIELD_IDENTIFIER,next_upstream,next_upstream)
+1000632,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,un->mask),(COLUMN_NUMBER,59),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2393),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,un->mask)
+1000633,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,un),(COLUMN_NUMBER,59),(TYPE_FULL_NAME,ngx_http_upstream_next_t *),(LINE_NUMBER,2393),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,un),(IDENTIFIER,un,u->conf->next_upstream & un->mask)
+1000634,(ORDER,2),(LINE_NUMBER,2393),(ARGUMENT_INDEX,2),(CODE,mask),(COLUMN_NUMBER,63),(CANONICAL_NAME,mask),(FIELD_IDENTIFIER,mask,mask)
+1000635,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,70),(TYPE_FULL_NAME,void),(LINE_NUMBER,2393),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000636,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_http_upstream_next(r, u, un->mask)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,ngx_http_upstream_next),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2394),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_http_upstream_next),(ngx_http_upstream_next,ngx_http_upstream_next(r, u, un->mask))
+1000637,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2394),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,ngx_http_upstream_next(r, u, un->mask))
+1000638,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u),(COLUMN_NUMBER,38),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2394),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,ngx_http_upstream_next(r, u, un->mask))
+1000639,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,un->mask),(COLUMN_NUMBER,41),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2394),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,un->mask)
+1000640,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,un),(COLUMN_NUMBER,41),(TYPE_FULL_NAME,ngx_http_upstream_next_t *),(LINE_NUMBER,2394),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,un),(IDENTIFIER,un,ngx_http_upstream_next(r, u, un->mask))
+1000641,(ORDER,2),(LINE_NUMBER,2394),(ARGUMENT_INDEX,2),(CODE,mask),(COLUMN_NUMBER,45),(CANONICAL_NAME,mask),(FIELD_IDENTIFIER,mask,mask)
+1000642,(ORDER,2),(LINE_NUMBER,2395),(ARGUMENT_INDEX,2),(CODE,return NGX_OK;),(COLUMN_NUMBER,12),(RETURN,return NGX_OK;,return NGX_OK;)
+1000643,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NGX_OK),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2395),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_OK),(IDENTIFIER,NGX_OK,return NGX_OK;)
+1000644,(PARSER_TYPE_NAME,IfStatement),(ORDER,3),(LINE_NUMBER,2400),(ARGUMENT_INDEX,3),(CODE,if (u->cache_status == NGX_HTTP_CACHE_EXPIRED\n            && ((u->conf->cache_use_stale & un->mask) || r->cache->stale_error))),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (u->cache_status == NGX_HTTP_CACHE_EXPIRED\n            && ((u->conf->cache_use_stale & un->mask) || r->cache->stale_error)),if (u->cache_status == NGX_HTTP_CACHE_EXPIRED\n            && ((u->conf->cache_use_stale & un->mask) || r->cache->stale_error)))
+1000645,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->cache_status == NGX_HTTP_CACHE_EXPIRED\n            && ((u->conf->cache_use_stale & un->mask) || r->cache->stale_error)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2400),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,u->cache_status == NGX_HTTP_CACHE_EXPIRED\n            && ((u->conf->cache_use_stale & un->mask) || r->cache->stale_error))
+1000646,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->cache_status == NGX_HTTP_CACHE_EXPIRED),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2400),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,u->cache_status == NGX_HTTP_CACHE_EXPIRED)
+1000647,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->cache_status),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2400),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->cache_status)
+1000648,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2400),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,u->cache_status == NGX_HTTP_CACHE_EXPIRED)
+1000649,(ORDER,2),(LINE_NUMBER,2400),(ARGUMENT_INDEX,2),(CODE,cache_status),(COLUMN_NUMBER,15),(CANONICAL_NAME,cache_status),(FIELD_IDENTIFIER,cache_status,cache_status)
+1000650,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NGX_HTTP_CACHE_EXPIRED),(COLUMN_NUMBER,31),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2400),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_HTTP_CACHE_EXPIRED),(IDENTIFIER,NGX_HTTP_CACHE_EXPIRED,u->cache_status == NGX_HTTP_CACHE_EXPIRED)
+1000651,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,(u->conf->cache_use_stale & un->mask) || r->cache->stale_error),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2401),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,(u->conf->cache_use_stale & un->mask) || r->cache->stale_error)
+1000652,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->conf->cache_use_stale & un->mask),(COLUMN_NUMBER,17),(METHOD_FULL_NAME,<operator>.and),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2401),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.and),(<operator>.and,u->conf->cache_use_stale & un->mask)
+1000653,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->conf->cache_use_stale),(COLUMN_NUMBER,17),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2401),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->conf->cache_use_stale)
+1000654,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->conf),(COLUMN_NUMBER,17),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2401),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->conf)
+1000655,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,17),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2401),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,u->conf->cache_use_stale & un->mask)
+1000656,(ORDER,2),(LINE_NUMBER,2401),(ARGUMENT_INDEX,2),(CODE,conf),(COLUMN_NUMBER,20),(CANONICAL_NAME,conf),(FIELD_IDENTIFIER,conf,conf)
+1000657,(ORDER,2),(LINE_NUMBER,2401),(ARGUMENT_INDEX,2),(CODE,cache_use_stale),(COLUMN_NUMBER,26),(CANONICAL_NAME,cache_use_stale),(FIELD_IDENTIFIER,cache_use_stale,cache_use_stale)
+1000658,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,un->mask),(COLUMN_NUMBER,44),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2401),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,un->mask)
+1000659,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,un),(COLUMN_NUMBER,44),(TYPE_FULL_NAME,ngx_http_upstream_next_t *),(LINE_NUMBER,2401),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,un),(IDENTIFIER,un,u->conf->cache_use_stale & un->mask)
+1000660,(ORDER,2),(LINE_NUMBER,2401),(ARGUMENT_INDEX,2),(CODE,mask),(COLUMN_NUMBER,48),(CANONICAL_NAME,mask),(FIELD_IDENTIFIER,mask,mask)
+1000661,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,r->cache->stale_error),(COLUMN_NUMBER,57),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2401),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->stale_error)
+1000662,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,57),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2401),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000663,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,57),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2401),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,(u->conf->cache_use_stale & un->mask) || r->cache->stale_error)
+1000664,(ORDER,2),(LINE_NUMBER,2401),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,60),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000665,(ORDER,2),(LINE_NUMBER,2401),(ARGUMENT_INDEX,2),(CODE,stale_error),(COLUMN_NUMBER,67),(CANONICAL_NAME,stale_error),(FIELD_IDENTIFIER,stale_error,stale_error)
+1000666,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,void),(LINE_NUMBER,2403),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000667,(TYPE_FULL_NAME,ngx_int_t),(ORDER,1),(CODE,rc),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(LOCAL,rc: ngx_int_t)
+1000668,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,rc = u->reinit_request(r)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2405),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,rc = u->reinit_request(r))
+1000669,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,rc),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,2405),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(IDENTIFIER,rc,rc = u->reinit_request(r))
+1000670,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u->reinit_request(r)),(COLUMN_NUMBER,17),(METHOD_FULL_NAME,u->reinit_request),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2405),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u->reinit_request),(u->reinit_request,u->reinit_request(r))
+1000671,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2405),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,u->reinit_request(r))
+1000672,(PARSER_TYPE_NAME,IfStatement),(ORDER,3),(LINE_NUMBER,2407),(ARGUMENT_INDEX,3),(CODE,if (rc == NGX_OK)),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,if (rc == NGX_OK),if (rc == NGX_OK))
+1000673,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,rc == NGX_OK),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2407),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,rc == NGX_OK)
+1000674,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,rc),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,2407),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(IDENTIFIER,rc,rc == NGX_OK)
+1000675,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NGX_OK),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2407),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_OK),(IDENTIFIER,NGX_OK,rc == NGX_OK)
+1000676,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,void),(LINE_NUMBER,2407),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000677,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->cache_status = NGX_HTTP_CACHE_STALE),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2412),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,u->cache_status = NGX_HTTP_CACHE_STALE)
+1000678,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->cache_status),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2412),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->cache_status)
+1000679,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2412),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,u->cache_status = NGX_HTTP_CACHE_STALE)
+1000680,(ORDER,2),(LINE_NUMBER,2412),(ARGUMENT_INDEX,2),(CODE,cache_status),(COLUMN_NUMBER,19),(CANONICAL_NAME,cache_status),(FIELD_IDENTIFIER,cache_status,cache_status)
+1000681,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NGX_HTTP_CACHE_STALE),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2412),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_HTTP_CACHE_STALE),(IDENTIFIER,NGX_HTTP_CACHE_STALE,u->cache_status = NGX_HTTP_CACHE_STALE)
+1000682,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,rc = ngx_http_upstream_cache_send(r, u)),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2413),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,rc = ngx_http_upstream_cache_send(r, u))
+1000683,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,rc),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,2413),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(IDENTIFIER,rc,rc = ngx_http_upstream_cache_send(r, u))
+1000684,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_http_upstream_cache_send(r, u)),(COLUMN_NUMBER,21),(METHOD_FULL_NAME,ngx_http_upstream_cache_send),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2413),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_http_upstream_cache_send),(ngx_http_upstream_cache_send,ngx_http_upstream_cache_send(r, u))
+1000685,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,50),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2413),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,ngx_http_upstream_cache_send(r, u))
+1000686,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u),(COLUMN_NUMBER,53),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2413),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,ngx_http_upstream_cache_send(r, u))
+1000687,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,ngx_http_upstream_finalize_request(r, u, rc)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,ngx_http_upstream_finalize_request),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2423),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_http_upstream_finalize_request),(ngx_http_upstream_finalize_request,ngx_http_upstream_finalize_request(r, u, rc))
+1000688,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,47),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2423),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,ngx_http_upstream_finalize_request(r, u, rc))
+1000689,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u),(COLUMN_NUMBER,50),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2423),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,ngx_http_upstream_finalize_request(r, u, rc))
+1000690,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,rc),(COLUMN_NUMBER,53),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,2423),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(IDENTIFIER,rc,ngx_http_upstream_finalize_request(r, u, rc))
+1000691,(ORDER,5),(LINE_NUMBER,2424),(ARGUMENT_INDEX,5),(CODE,return NGX_OK;),(COLUMN_NUMBER,12),(RETURN,return NGX_OK;,return NGX_OK;)
+1000692,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NGX_OK),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2424),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_OK),(IDENTIFIER,NGX_OK,return NGX_OK;)
+1000693,(PARSER_TYPE_NAME,IfStatement),(ORDER,5),(LINE_NUMBER,2432),(ARGUMENT_INDEX,5),(CODE,if (status == NGX_HTTP_NOT_MODIFIED\n        && u->cache_status == NGX_HTTP_CACHE_EXPIRED\n        && u->conf->cache_revalidate)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (status == NGX_HTTP_NOT_MODIFIED\n        && u->cache_status == NGX_HTTP_CACHE_EXPIRED\n        && u->conf->cache_revalidate),if (status == NGX_HTTP_NOT_MODIFIED\n        && u->cache_status == NGX_HTTP_CACHE_EXPIRED\n        && u->conf->cache_revalidate))
+1000694,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,status == NGX_HTTP_NOT_MODIFIED\n        && u->cache_status == NGX_HTTP_CACHE_EXPIRED\n        && u->conf->cache_revalidate),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2432),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,status == NGX_HTTP_NOT_MODIFIED\n        && u->cache_status == NGX_HTTP_CACHE_EXPIRED\n        && u->conf->cache_revalidate)
+1000695,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,status == NGX_HTTP_NOT_MODIFIED),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2432),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,status == NGX_HTTP_NOT_MODIFIED)
+1000696,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,status),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_uint_t),(LINE_NUMBER,2432),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,status),(IDENTIFIER,status,status == NGX_HTTP_NOT_MODIFIED)
+1000697,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NGX_HTTP_NOT_MODIFIED),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2432),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_HTTP_NOT_MODIFIED),(IDENTIFIER,NGX_HTTP_NOT_MODIFIED,status == NGX_HTTP_NOT_MODIFIED)
+1000698,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u->cache_status == NGX_HTTP_CACHE_EXPIRED\n        && u->conf->cache_revalidate),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.logicalAnd),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2433),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalAnd),(<operator>.logicalAnd,u->cache_status == NGX_HTTP_CACHE_EXPIRED\n        && u->conf->cache_revalidate)
+1000699,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->cache_status == NGX_HTTP_CACHE_EXPIRED),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2433),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,u->cache_status == NGX_HTTP_CACHE_EXPIRED)
+1000700,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->cache_status),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2433),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->cache_status)
+1000701,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,11),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2433),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,u->cache_status == NGX_HTTP_CACHE_EXPIRED)
+1000702,(ORDER,2),(LINE_NUMBER,2433),(ARGUMENT_INDEX,2),(CODE,cache_status),(COLUMN_NUMBER,14),(CANONICAL_NAME,cache_status),(FIELD_IDENTIFIER,cache_status,cache_status)
+1000703,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NGX_HTTP_CACHE_EXPIRED),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2433),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_HTTP_CACHE_EXPIRED),(IDENTIFIER,NGX_HTTP_CACHE_EXPIRED,u->cache_status == NGX_HTTP_CACHE_EXPIRED)
+1000704,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u->conf->cache_revalidate),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2434),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->conf->cache_revalidate)
+1000705,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->conf),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2434),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->conf)
+1000706,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,11),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2434),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,u->cache_status == NGX_HTTP_CACHE_EXPIRED\n        && u->conf->cache_revalidate)
+1000707,(ORDER,2),(LINE_NUMBER,2434),(ARGUMENT_INDEX,2),(CODE,conf),(COLUMN_NUMBER,14),(CANONICAL_NAME,conf),(FIELD_IDENTIFIER,conf,conf)
+1000708,(ORDER,2),(LINE_NUMBER,2434),(ARGUMENT_INDEX,2),(CODE,cache_revalidate),(COLUMN_NUMBER,20),(CANONICAL_NAME,cache_revalidate),(FIELD_IDENTIFIER,cache_revalidate,cache_revalidate)
+1000709,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,void),(LINE_NUMBER,2437),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000710,(TYPE_FULL_NAME,time_t),(ORDER,1),(CODE,now),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,now),(LOCAL,now: time_t)
+1000711,(TYPE_FULL_NAME,time_t),(ORDER,2),(CODE,valid),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(LOCAL,valid: time_t)
+1000712,(TYPE_FULL_NAME,time_t),(ORDER,3),(CODE,updating),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,updating),(LOCAL,updating: time_t)
+1000713,(TYPE_FULL_NAME,time_t),(ORDER,4),(CODE,error),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,error),(LOCAL,error: time_t)
+1000714,(TYPE_FULL_NAME,ngx_int_t),(ORDER,5),(CODE,rc),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(LOCAL,rc: ngx_int_t)
+1000715,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,ngx_log_debug0(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,\n                       "http upstream not modified")),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,ngx_log_debug0),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2439),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_log_debug0),(ngx_log_debug0,ngx_log_debug0(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,\n                       \"http upstream not modified\"))
+1000716,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NGX_LOG_DEBUG_HTTP),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2439),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_LOG_DEBUG_HTTP),(IDENTIFIER,NGX_LOG_DEBUG_HTTP,ngx_log_debug0(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,\n                       \"http upstream not modified\"))
+1000717,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,r->connection->log),(COLUMN_NUMBER,43),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2439),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->connection->log)
+1000718,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->connection),(COLUMN_NUMBER,43),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2439),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->connection)
+1000719,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,43),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2439),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,ngx_log_debug0(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,\n                       \"http upstream not modified\"))
+1000720,(ORDER,2),(LINE_NUMBER,2439),(ARGUMENT_INDEX,2),(CODE,connection),(COLUMN_NUMBER,46),(CANONICAL_NAME,connection),(FIELD_IDENTIFIER,connection,connection)
+1000721,(ORDER,2),(LINE_NUMBER,2439),(ARGUMENT_INDEX,2),(CODE,log),(COLUMN_NUMBER,58),(CANONICAL_NAME,log),(FIELD_IDENTIFIER,log,log)
+1000722,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,0),(COLUMN_NUMBER,63),(TYPE_FULL_NAME,int),(LINE_NUMBER,2439),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ngx_log_debug0(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,\n                       \"http upstream not modified\"))
+1000723,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,"http upstream not modified"),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,char *),(LINE_NUMBER,2440),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"http upstream not modified\",ngx_log_debug0(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,\n                       \"http upstream not modified\"))
+1000724,(ORDER,7),(ARGUMENT_INDEX,7),(CODE,now = ngx_time()),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2442),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,now = ngx_time())
+1000725,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,now),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2442),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,now),(IDENTIFIER,now,now = ngx_time())
+1000726,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_time()),(COLUMN_NUMBER,14),(METHOD_FULL_NAME,ngx_time),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2442),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_time),(ngx_time,ngx_time())
+1000727,(ORDER,8),(ARGUMENT_INDEX,8),(CODE,valid = r->cache->valid_sec),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2444),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,valid = r->cache->valid_sec)
+1000728,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2444),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,valid = r->cache->valid_sec)
+1000729,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,r->cache->valid_sec),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2444),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->valid_sec)
+1000730,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2444),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000731,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2444),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,valid = r->cache->valid_sec)
+1000732,(ORDER,2),(LINE_NUMBER,2444),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,19),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000733,(ORDER,2),(LINE_NUMBER,2444),(ARGUMENT_INDEX,2),(CODE,valid_sec),(COLUMN_NUMBER,26),(CANONICAL_NAME,valid_sec),(FIELD_IDENTIFIER,valid_sec,valid_sec)
+1000734,(ORDER,9),(ARGUMENT_INDEX,9),(CODE,updating = r->cache->updating_sec),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2445),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,updating = r->cache->updating_sec)
+1000735,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,updating),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2445),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,updating),(IDENTIFIER,updating,updating = r->cache->updating_sec)
+1000736,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,r->cache->updating_sec),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2445),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->updating_sec)
+1000737,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,19),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2445),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000738,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2445),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,updating = r->cache->updating_sec)
+1000739,(ORDER,2),(LINE_NUMBER,2445),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,22),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000740,(ORDER,2),(LINE_NUMBER,2445),(ARGUMENT_INDEX,2),(CODE,updating_sec),(COLUMN_NUMBER,29),(CANONICAL_NAME,updating_sec),(FIELD_IDENTIFIER,updating_sec,updating_sec)
+1000741,(ORDER,10),(ARGUMENT_INDEX,10),(CODE,error = r->cache->error_sec),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2446),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,error = r->cache->error_sec)
+1000742,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,error),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2446),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,error),(IDENTIFIER,error,error = r->cache->error_sec)
+1000743,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,r->cache->error_sec),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2446),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->error_sec)
+1000744,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2446),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000745,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2446),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,error = r->cache->error_sec)
+1000746,(ORDER,2),(LINE_NUMBER,2446),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,19),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000747,(ORDER,2),(LINE_NUMBER,2446),(ARGUMENT_INDEX,2),(CODE,error_sec),(COLUMN_NUMBER,26),(CANONICAL_NAME,error_sec),(FIELD_IDENTIFIER,error_sec,error_sec)
+1000748,(ORDER,11),(ARGUMENT_INDEX,11),(CODE,rc = u->reinit_request(r)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2448),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,rc = u->reinit_request(r))
+1000749,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,rc),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,2448),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(IDENTIFIER,rc,rc = u->reinit_request(r))
+1000750,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u->reinit_request(r)),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,u->reinit_request),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2448),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u->reinit_request),(u->reinit_request,u->reinit_request(r))
+1000751,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,31),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2448),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,u->reinit_request(r))
+1000752,(PARSER_TYPE_NAME,IfStatement),(ORDER,12),(LINE_NUMBER,2450),(ARGUMENT_INDEX,12),(CODE,if (rc != NGX_OK)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (rc != NGX_OK),if (rc != NGX_OK))
+1000753,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,rc != NGX_OK),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2450),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,rc != NGX_OK)
+1000754,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,rc),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,2450),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(IDENTIFIER,rc,rc != NGX_OK)
+1000755,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NGX_OK),(COLUMN_NUMBER,18),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2450),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_OK),(IDENTIFIER,NGX_OK,rc != NGX_OK)
+1000756,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,void),(LINE_NUMBER,2450),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000757,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_http_upstream_finalize_request(r, u, rc)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,ngx_http_upstream_finalize_request),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2451),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_http_upstream_finalize_request),(ngx_http_upstream_finalize_request,ngx_http_upstream_finalize_request(r, u, rc))
+1000758,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,47),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2451),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,ngx_http_upstream_finalize_request(r, u, rc))
+1000759,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u),(COLUMN_NUMBER,50),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2451),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,ngx_http_upstream_finalize_request(r, u, rc))
+1000760,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,rc),(COLUMN_NUMBER,53),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,2451),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(IDENTIFIER,rc,ngx_http_upstream_finalize_request(r, u, rc))
+1000761,(ORDER,2),(LINE_NUMBER,2452),(ARGUMENT_INDEX,2),(CODE,return NGX_OK;),(COLUMN_NUMBER,12),(RETURN,return NGX_OK;,return NGX_OK;)
+1000762,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NGX_OK),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2452),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_OK),(IDENTIFIER,NGX_OK,return NGX_OK;)
+1000763,(ORDER,13),(ARGUMENT_INDEX,13),(CODE,u->cache_status = NGX_HTTP_CACHE_REVALIDATED),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2455),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,u->cache_status = NGX_HTTP_CACHE_REVALIDATED)
+1000764,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->cache_status),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2455),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->cache_status)
+1000765,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2455),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,u->cache_status = NGX_HTTP_CACHE_REVALIDATED)
+1000766,(ORDER,2),(LINE_NUMBER,2455),(ARGUMENT_INDEX,2),(CODE,cache_status),(COLUMN_NUMBER,11),(CANONICAL_NAME,cache_status),(FIELD_IDENTIFIER,cache_status,cache_status)
+1000767,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,NGX_HTTP_CACHE_REVALIDATED),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2455),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_HTTP_CACHE_REVALIDATED),(IDENTIFIER,NGX_HTTP_CACHE_REVALIDATED,u->cache_status = NGX_HTTP_CACHE_REVALIDATED)
+1000768,(ORDER,14),(ARGUMENT_INDEX,14),(CODE,rc = ngx_http_upstream_cache_send(r, u)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2456),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,rc = ngx_http_upstream_cache_send(r, u))
+1000769,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,rc),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,2456),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(IDENTIFIER,rc,rc = ngx_http_upstream_cache_send(r, u))
+1000770,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_http_upstream_cache_send(r, u)),(COLUMN_NUMBER,13),(METHOD_FULL_NAME,ngx_http_upstream_cache_send),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2456),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_http_upstream_cache_send),(ngx_http_upstream_cache_send,ngx_http_upstream_cache_send(r, u))
+1000771,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,42),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2456),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,ngx_http_upstream_cache_send(r, u))
+1000772,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u),(COLUMN_NUMBER,45),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2456),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,ngx_http_upstream_cache_send(r, u))
+1000773,(PARSER_TYPE_NAME,IfStatement),(ORDER,15),(LINE_NUMBER,2466),(ARGUMENT_INDEX,15),(CODE,if (valid == 0)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (valid == 0),if (valid == 0))
+1000774,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid == 0),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2466),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,valid == 0)
+1000775,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2466),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,valid == 0)
+1000776,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,int),(LINE_NUMBER,2466),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,valid == 0)
+1000777,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,void),(LINE_NUMBER,2466),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000778,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid = r->cache->valid_sec),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2467),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,valid = r->cache->valid_sec)
+1000779,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2467),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,valid = r->cache->valid_sec)
+1000780,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,r->cache->valid_sec),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2467),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->valid_sec)
+1000781,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2467),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000782,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2467),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,valid = r->cache->valid_sec)
+1000783,(ORDER,2),(LINE_NUMBER,2467),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,23),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000784,(ORDER,2),(LINE_NUMBER,2467),(ARGUMENT_INDEX,2),(CODE,valid_sec),(COLUMN_NUMBER,30),(CANONICAL_NAME,valid_sec),(FIELD_IDENTIFIER,valid_sec,valid_sec)
+1000785,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,updating = r->cache->updating_sec),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2468),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,updating = r->cache->updating_sec)
+1000786,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,updating),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2468),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,updating),(IDENTIFIER,updating,updating = r->cache->updating_sec)
+1000787,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,r->cache->updating_sec),(COLUMN_NUMBER,23),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2468),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->updating_sec)
+1000788,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,23),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2468),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000789,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2468),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,updating = r->cache->updating_sec)
+1000790,(ORDER,2),(LINE_NUMBER,2468),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,26),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000791,(ORDER,2),(LINE_NUMBER,2468),(ARGUMENT_INDEX,2),(CODE,updating_sec),(COLUMN_NUMBER,33),(CANONICAL_NAME,updating_sec),(FIELD_IDENTIFIER,updating_sec,updating_sec)
+1000792,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,error = r->cache->error_sec),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2469),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,error = r->cache->error_sec)
+1000793,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,error),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2469),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,error),(IDENTIFIER,error,error = r->cache->error_sec)
+1000794,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,r->cache->error_sec),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2469),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->error_sec)
+1000795,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2469),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000796,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2469),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,error = r->cache->error_sec)
+1000797,(ORDER,2),(LINE_NUMBER,2469),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,23),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000798,(ORDER,2),(LINE_NUMBER,2469),(ARGUMENT_INDEX,2),(CODE,error_sec),(COLUMN_NUMBER,30),(CANONICAL_NAME,error_sec),(FIELD_IDENTIFIER,error_sec,error_sec)
+1000799,(PARSER_TYPE_NAME,IfStatement),(ORDER,16),(LINE_NUMBER,2472),(ARGUMENT_INDEX,16),(CODE,if (valid == 0)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (valid == 0),if (valid == 0))
+1000800,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid == 0),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2472),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,valid == 0)
+1000801,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2472),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,valid == 0)
+1000802,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,21),(TYPE_FULL_NAME,int),(LINE_NUMBER,2472),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,valid == 0)
+1000803,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,void),(LINE_NUMBER,2472),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000804,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid = ngx_http_file_cache_valid(u->conf->cache_valid,\n                                              u->headers_in.status_n)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2473),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,valid = ngx_http_file_cache_valid(u->conf->cache_valid,\n                                              u->headers_in.status_n))
+1000805,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2473),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,valid = ngx_http_file_cache_valid(u->conf->cache_valid,\n                                              u->headers_in.status_n))
+1000806,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_http_file_cache_valid(u->conf->cache_valid,\n                                              u->headers_in.status_n)),(COLUMN_NUMBER,20),(METHOD_FULL_NAME,ngx_http_file_cache_valid),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2473),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_http_file_cache_valid),(ngx_http_file_cache_valid,ngx_http_file_cache_valid(u->conf->cache_valid,\n                                              u->headers_in.status_n))
+1000807,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->conf->cache_valid),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2473),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->conf->cache_valid)
+1000808,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->conf),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2473),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->conf)
+1000809,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,46),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2473),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,ngx_http_file_cache_valid(u->conf->cache_valid,\n                                              u->headers_in.status_n))
+1000810,(ORDER,2),(LINE_NUMBER,2473),(ARGUMENT_INDEX,2),(CODE,conf),(COLUMN_NUMBER,49),(CANONICAL_NAME,conf),(FIELD_IDENTIFIER,conf,conf)
+1000811,(ORDER,2),(LINE_NUMBER,2473),(ARGUMENT_INDEX,2),(CODE,cache_valid),(COLUMN_NUMBER,55),(CANONICAL_NAME,cache_valid),(FIELD_IDENTIFIER,cache_valid,cache_valid)
+1000812,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u->headers_in.status_n),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2474),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,u->headers_in.status_n)
+1000813,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u->headers_in),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2474),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,u->headers_in)
+1000814,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,u),(COLUMN_NUMBER,46),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2474),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,ngx_http_file_cache_valid(u->conf->cache_valid,\n                                              u->headers_in.status_n))
+1000815,(ORDER,2),(LINE_NUMBER,2474),(ARGUMENT_INDEX,2),(CODE,headers_in),(COLUMN_NUMBER,49),(CANONICAL_NAME,headers_in),(FIELD_IDENTIFIER,headers_in,headers_in)
+1000816,(ORDER,2),(LINE_NUMBER,2474),(ARGUMENT_INDEX,2),(CODE,status_n),(COLUMN_NUMBER,60),(CANONICAL_NAME,status_n),(FIELD_IDENTIFIER,status_n,status_n)
+1000817,(PARSER_TYPE_NAME,IfStatement),(ORDER,2),(LINE_NUMBER,2475),(ARGUMENT_INDEX,2),(CODE,if (valid)),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,if (valid),if (valid))
+1000818,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2475),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,if (valid))
+1000819,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,void),(LINE_NUMBER,2475),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000820,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid = now + valid),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2476),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,valid = now + valid)
+1000821,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2476),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,valid = now + valid)
+1000822,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,now + valid),(COLUMN_NUMBER,24),(METHOD_FULL_NAME,<operator>.addition),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2476),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addition),(<operator>.addition,now + valid)
+1000823,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,now),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2476),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,now),(IDENTIFIER,now,now + valid)
+1000824,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,valid),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2476),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,now + valid)
+1000825,(PARSER_TYPE_NAME,IfStatement),(ORDER,17),(LINE_NUMBER,2480),(ARGUMENT_INDEX,17),(CODE,if (valid)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (valid),if (valid))
+1000826,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,valid),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2480),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,if (valid))
+1000827,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,void),(LINE_NUMBER,2480),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000828,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache->valid_sec = valid),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2481),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,r->cache->valid_sec = valid)
+1000829,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache->valid_sec),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2481),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->valid_sec)
+1000830,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2481),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000831,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2481),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,r->cache->valid_sec = valid)
+1000832,(ORDER,2),(LINE_NUMBER,2481),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,15),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000833,(ORDER,2),(LINE_NUMBER,2481),(ARGUMENT_INDEX,2),(CODE,valid_sec),(COLUMN_NUMBER,22),(CANONICAL_NAME,valid_sec),(FIELD_IDENTIFIER,valid_sec,valid_sec)
+1000834,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,valid),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2481),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,valid),(IDENTIFIER,valid,r->cache->valid_sec = valid)
+1000835,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,r->cache->updating_sec = updating),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2482),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,r->cache->updating_sec = updating)
+1000836,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache->updating_sec),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2482),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->updating_sec)
+1000837,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2482),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000838,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2482),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,r->cache->updating_sec = updating)
+1000839,(ORDER,2),(LINE_NUMBER,2482),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,15),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000840,(ORDER,2),(LINE_NUMBER,2482),(ARGUMENT_INDEX,2),(CODE,updating_sec),(COLUMN_NUMBER,22),(CANONICAL_NAME,updating_sec),(FIELD_IDENTIFIER,updating_sec,updating_sec)
+1000841,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,updating),(COLUMN_NUMBER,37),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2482),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,updating),(IDENTIFIER,updating,r->cache->updating_sec = updating)
+1000842,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,r->cache->error_sec = error),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2483),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,r->cache->error_sec = error)
+1000843,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache->error_sec),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2483),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->error_sec)
+1000844,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2483),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000845,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2483),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,r->cache->error_sec = error)
+1000846,(ORDER,2),(LINE_NUMBER,2483),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,15),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000847,(ORDER,2),(LINE_NUMBER,2483),(ARGUMENT_INDEX,2),(CODE,error_sec),(COLUMN_NUMBER,22),(CANONICAL_NAME,error_sec),(FIELD_IDENTIFIER,error_sec,error_sec)
+1000848,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,error),(COLUMN_NUMBER,34),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2483),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,error),(IDENTIFIER,error,r->cache->error_sec = error)
+1000849,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,r->cache->date = now),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2485),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,r->cache->date = now)
+1000850,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache->date),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2485),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache->date)
+1000851,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r->cache),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2485),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,r->cache)
+1000852,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2485),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,r->cache->date = now)
+1000853,(ORDER,2),(LINE_NUMBER,2485),(ARGUMENT_INDEX,2),(CODE,cache),(COLUMN_NUMBER,15),(CANONICAL_NAME,cache),(FIELD_IDENTIFIER,cache,cache)
+1000854,(ORDER,2),(LINE_NUMBER,2485),(ARGUMENT_INDEX,2),(CODE,date),(COLUMN_NUMBER,22),(CANONICAL_NAME,date),(FIELD_IDENTIFIER,date,date)
+1000855,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,now),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,time_t),(LINE_NUMBER,2485),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,now),(IDENTIFIER,now,r->cache->date = now)
+1000856,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,ngx_http_file_cache_update_header(r)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,ngx_http_file_cache_update_header),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2487),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_http_file_cache_update_header),(ngx_http_file_cache_update_header,ngx_http_file_cache_update_header(r))
+1000857,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,46),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2487),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,ngx_http_file_cache_update_header(r))
+1000858,(ORDER,18),(ARGUMENT_INDEX,18),(CODE,ngx_http_upstream_finalize_request(r, u, rc)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,ngx_http_upstream_finalize_request),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2490),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_http_upstream_finalize_request),(ngx_http_upstream_finalize_request,ngx_http_upstream_finalize_request(r, u, rc))
+1000859,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,r),(COLUMN_NUMBER,43),(TYPE_FULL_NAME,ngx_http_request_t *),(LINE_NUMBER,2490),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(IDENTIFIER,r,ngx_http_upstream_finalize_request(r, u, rc))
+1000860,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,u),(COLUMN_NUMBER,46),(TYPE_FULL_NAME,ngx_http_upstream_t *),(LINE_NUMBER,2490),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(IDENTIFIER,u,ngx_http_upstream_finalize_request(r, u, rc))
+1000861,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,rc),(COLUMN_NUMBER,49),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,2490),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,rc),(IDENTIFIER,rc,ngx_http_upstream_finalize_request(r, u, rc))
+1000862,(ORDER,19),(LINE_NUMBER,2491),(ARGUMENT_INDEX,19),(CODE,return NGX_OK;),(COLUMN_NUMBER,8),(RETURN,return NGX_OK;,return NGX_OK;)
+1000863,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NGX_OK),(COLUMN_NUMBER,15),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2491),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_OK),(IDENTIFIER,NGX_OK,return NGX_OK;)
+1000864,(ORDER,6),(LINE_NUMBER,2496),(ARGUMENT_INDEX,6),(CODE,return NGX_DECLINED;),(COLUMN_NUMBER,4),(RETURN,return NGX_DECLINED;,return NGX_DECLINED;)
+1000865,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NGX_DECLINED),(COLUMN_NUMBER,11),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,2496),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_DECLINED),(IDENTIFIER,NGX_DECLINED,return NGX_DECLINED;)
+1000866,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,2379),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000586,1000587,AST
+1000586,1000588,AST
+1000586,1000589,AST
+1000586,1000866,AST
+1000589,1000590,AST
+1000589,1000591,AST
+1000589,1000592,AST
+1000589,1000599,AST
+1000589,1000693,AST
+1000589,1000864,AST
+1000592,1000593,AST
+1000592,1000594,AST
+1000594,1000595,AST
+1000594,1000598,AST
+1000595,1000596,AST
+1000595,1000597,AST
+1000599,1000600,AST
+1000599,1000603,AST
+1000599,1000606,AST
+1000599,1000608,AST
+1000600,1000601,AST
+1000600,1000602,AST
+1000603,1000604,AST
+1000603,1000605,AST
+1000606,1000607,AST
+1000608,1000609,AST
+1000608,1000617,AST
+1000608,1000644,AST
+1000609,1000610,AST
+1000609,1000615,AST
+1000610,1000611,AST
+1000610,1000612,AST
+1000612,1000613,AST
+1000612,1000614,AST
+1000615,1000616,AST
+1000617,1000618,AST
+1000617,1000635,AST
+1000618,1000619,AST
+1000618,1000626,AST
+1000619,1000620,AST
+1000619,1000625,AST
+1000620,1000621,AST
+1000620,1000624,AST
+1000621,1000622,AST
+1000621,1000623,AST
+1000626,1000627,AST
+1000626,1000632,AST
+1000627,1000628,AST
+1000627,1000631,AST
+1000628,1000629,AST
+1000628,1000630,AST
+1000632,1000633,AST
+1000632,1000634,AST
+1000635,1000636,AST
+1000635,1000642,AST
+1000636,1000637,AST
+1000636,1000638,AST
+1000636,1000639,AST
+1000639,1000640,AST
+1000639,1000641,AST
+1000642,1000643,AST
+1000644,1000645,AST
+1000644,1000666,AST
+1000645,1000646,AST
+1000645,1000651,AST
+1000646,1000647,AST
+1000646,1000650,AST
+1000647,1000648,AST
+1000647,1000649,AST
+1000651,1000652,AST
+1000651,1000661,AST
+1000652,1000653,AST
+1000652,1000658,AST
+1000653,1000654,AST
+1000653,1000657,AST
+1000654,1000655,AST
+1000654,1000656,AST
+1000658,1000659,AST
+1000658,1000660,AST
+1000661,1000662,AST
+1000661,1000665,AST
+1000662,1000663,AST
+1000662,1000664,AST
+1000666,1000667,AST
+1000666,1000668,AST
+1000666,1000672,AST
+1000666,1000687,AST
+1000666,1000691,AST
+1000668,1000669,AST
+1000668,1000670,AST
+1000670,1000671,AST
+1000672,1000673,AST
+1000672,1000676,AST
+1000673,1000674,AST
+1000673,1000675,AST
+1000676,1000677,AST
+1000676,1000682,AST
+1000677,1000678,AST
+1000677,1000681,AST
+1000678,1000679,AST
+1000678,1000680,AST
+1000682,1000683,AST
+1000682,1000684,AST
+1000684,1000685,AST
+1000684,1000686,AST
+1000687,1000688,AST
+1000687,1000689,AST
+1000687,1000690,AST
+1000691,1000692,AST
+1000693,1000694,AST
+1000693,1000709,AST
+1000694,1000695,AST
+1000694,1000698,AST
+1000695,1000696,AST
+1000695,1000697,AST
+1000698,1000699,AST
+1000698,1000704,AST
+1000699,1000700,AST
+1000699,1000703,AST
+1000700,1000701,AST
+1000700,1000702,AST
+1000704,1000705,AST
+1000704,1000708,AST
+1000705,1000706,AST
+1000705,1000707,AST
+1000709,1000710,AST
+1000709,1000711,AST
+1000709,1000712,AST
+1000709,1000713,AST
+1000709,1000714,AST
+1000709,1000715,AST
+1000709,1000724,AST
+1000709,1000727,AST
+1000709,1000734,AST
+1000709,1000741,AST
+1000709,1000748,AST
+1000709,1000752,AST
+1000709,1000763,AST
+1000709,1000768,AST
+1000709,1000773,AST
+1000709,1000799,AST
+1000709,1000825,AST
+1000709,1000858,AST
+1000709,1000862,AST
+1000715,1000716,AST
+1000715,1000717,AST
+1000715,1000722,AST
+1000715,1000723,AST
+1000717,1000718,AST
+1000717,1000721,AST
+1000718,1000719,AST
+1000718,1000720,AST
+1000724,1000725,AST
+1000724,1000726,AST
+1000727,1000728,AST
+1000727,1000729,AST
+1000729,1000730,AST
+1000729,1000733,AST
+1000730,1000731,AST
+1000730,1000732,AST
+1000734,1000735,AST
+1000734,1000736,AST
+1000736,1000737,AST
+1000736,1000740,AST
+1000737,1000738,AST
+1000737,1000739,AST
+1000741,1000742,AST
+1000741,1000743,AST
+1000743,1000744,AST
+1000743,1000747,AST
+1000744,1000745,AST
+1000744,1000746,AST
+1000748,1000749,AST
+1000748,1000750,AST
+1000750,1000751,AST
+1000752,1000753,AST
+1000752,1000756,AST
+1000753,1000754,AST
+1000753,1000755,AST
+1000756,1000757,AST
+1000756,1000761,AST
+1000757,1000758,AST
+1000757,1000759,AST
+1000757,1000760,AST
+1000761,1000762,AST
+1000763,1000764,AST
+1000763,1000767,AST
+1000764,1000765,AST
+1000764,1000766,AST
+1000768,1000769,AST
+1000768,1000770,AST
+1000770,1000771,AST
+1000770,1000772,AST
+1000773,1000774,AST
+1000773,1000777,AST
+1000774,1000775,AST
+1000774,1000776,AST
+1000777,1000778,AST
+1000777,1000785,AST
+1000777,1000792,AST
+1000778,1000779,AST
+1000778,1000780,AST
+1000780,1000781,AST
+1000780,1000784,AST
+1000781,1000782,AST
+1000781,1000783,AST
+1000785,1000786,AST
+1000785,1000787,AST
+1000787,1000788,AST
+1000787,1000791,AST
+1000788,1000789,AST
+1000788,1000790,AST
+1000792,1000793,AST
+1000792,1000794,AST
+1000794,1000795,AST
+1000794,1000798,AST
+1000795,1000796,AST
+1000795,1000797,AST
+1000799,1000800,AST
+1000799,1000803,AST
+1000800,1000801,AST
+1000800,1000802,AST
+1000803,1000804,AST
+1000803,1000817,AST
+1000804,1000805,AST
+1000804,1000806,AST
+1000806,1000807,AST
+1000806,1000812,AST
+1000807,1000808,AST
+1000807,1000811,AST
+1000808,1000809,AST
+1000808,1000810,AST
+1000812,1000813,AST
+1000812,1000816,AST
+1000813,1000814,AST
+1000813,1000815,AST
+1000817,1000818,AST
+1000817,1000819,AST
+1000819,1000820,AST
+1000820,1000821,AST
+1000820,1000822,AST
+1000822,1000823,AST
+1000822,1000824,AST
+1000825,1000826,AST
+1000825,1000827,AST
+1000827,1000828,AST
+1000827,1000835,AST
+1000827,1000842,AST
+1000827,1000849,AST
+1000827,1000856,AST
+1000828,1000829,AST
+1000828,1000834,AST
+1000829,1000830,AST
+1000829,1000833,AST
+1000830,1000831,AST
+1000830,1000832,AST
+1000835,1000836,AST
+1000835,1000841,AST
+1000836,1000837,AST
+1000836,1000840,AST
+1000837,1000838,AST
+1000837,1000839,AST
+1000842,1000843,AST
+1000842,1000848,AST
+1000843,1000844,AST
+1000843,1000847,AST
+1000844,1000845,AST
+1000844,1000846,AST
+1000849,1000850,AST
+1000849,1000855,AST
+1000850,1000851,AST
+1000850,1000854,AST
+1000851,1000852,AST
+1000851,1000853,AST
+1000856,1000857,AST
+1000858,1000859,AST
+1000858,1000860,AST
+1000858,1000861,AST
+1000862,1000863,AST
+1000864,1000865,AST
+1000592,1000600,CFG
+1000594,1000592,CFG
+1000595,1000598,CFG
+1000597,1000595,CFG
+1000598,1000594,CFG
+1000600,1000605,CFG
+1000603,1000614,CFG
+1000603,1000695,CFG
+1000605,1000603,CFG
+1000606,1000605,CFG
+1000610,1000606,CFG
+1000610,1000623,CFG
+1000612,1000610,CFG
+1000614,1000612,CFG
+1000618,1000641,CFG
+1000618,1000649,CFG
+1000619,1000618,CFG
+1000619,1000630,CFG
+1000620,1000619,CFG
+1000621,1000624,CFG
+1000623,1000621,CFG
+1000624,1000620,CFG
+1000626,1000618,CFG
+1000627,1000634,CFG
+1000628,1000631,CFG
+1000630,1000628,CFG
+1000631,1000627,CFG
+1000632,1000626,CFG
+1000634,1000632,CFG
+1000636,1000642,CFG
+1000639,1000636,CFG
+1000641,1000639,CFG
+1000642,1000866,CFG
+1000645,1000670,CFG
+1000645,1000606,CFG
+1000646,1000645,CFG
+1000646,1000656,CFG
+1000647,1000646,CFG
+1000649,1000647,CFG
+1000651,1000645,CFG
+1000652,1000651,CFG
+1000652,1000664,CFG
+1000653,1000660,CFG
+1000654,1000657,CFG
+1000656,1000654,CFG
+1000657,1000653,CFG
+1000658,1000652,CFG
+1000660,1000658,CFG
+1000661,1000651,CFG
+1000662,1000665,CFG
+1000664,1000662,CFG
+1000665,1000661,CFG
+1000668,1000673,CFG
+1000670,1000668,CFG
+1000673,1000680,CFG
+1000673,1000687,CFG
+1000677,1000684,CFG
+1000678,1000677,CFG
+1000680,1000678,CFG
+1000682,1000687,CFG
+1000684,1000682,CFG
+1000687,1000691,CFG
+1000691,1000866,CFG
+1000694,1000720,CFG
+1000694,1000864,CFG
+1000695,1000694,CFG
+1000695,1000702,CFG
+1000698,1000694,CFG
+1000699,1000698,CFG
+1000699,1000707,CFG
+1000700,1000699,CFG
+1000702,1000700,CFG
+1000704,1000698,CFG
+1000705,1000708,CFG
+1000707,1000705,CFG
+1000708,1000704,CFG
+1000715,1000726,CFG
+1000717,1000715,CFG
+1000718,1000721,CFG
+1000720,1000718,CFG
+1000721,1000717,CFG
+1000724,1000732,CFG
+1000726,1000724,CFG
+1000727,1000739,CFG
+1000729,1000727,CFG
+1000730,1000733,CFG
+1000732,1000730,CFG
+1000733,1000729,CFG
+1000734,1000746,CFG
+1000736,1000734,CFG
+1000737,1000740,CFG
+1000739,1000737,CFG
+1000740,1000736,CFG
+1000741,1000750,CFG
+1000743,1000741,CFG
+1000744,1000747,CFG
+1000746,1000744,CFG
+1000747,1000743,CFG
+1000748,1000753,CFG
+1000750,1000748,CFG
+1000753,1000757,CFG
+1000753,1000766,CFG
+1000757,1000761,CFG
+1000761,1000866,CFG
+1000763,1000770,CFG
+1000764,1000763,CFG
+1000766,1000764,CFG
+1000768,1000774,CFG
+1000770,1000768,CFG
+1000774,1000783,CFG
+1000774,1000800,CFG
+1000778,1000790,CFG
+1000780,1000778,CFG
+1000781,1000784,CFG
+1000783,1000781,CFG
+1000784,1000780,CFG
+1000785,1000797,CFG
+1000787,1000785,CFG
+1000788,1000791,CFG
+1000790,1000788,CFG
+1000791,1000787,CFG
+1000792,1000800,CFG
+1000794,1000792,CFG
+1000795,1000798,CFG
+1000797,1000795,CFG
+1000798,1000794,CFG
+1000800,1000810,CFG
+1000800,1000832,CFG
+1000800,1000858,CFG
+1000804,1000822,CFG
+1000804,1000832,CFG
+1000804,1000858,CFG
+1000806,1000804,CFG
+1000807,1000815,CFG
+1000808,1000811,CFG
+1000810,1000808,CFG
+1000811,1000807,CFG
+1000812,1000806,CFG
+1000813,1000816,CFG
+1000815,1000813,CFG
+1000816,1000812,CFG
+1000820,1000832,CFG
+1000820,1000858,CFG
+1000822,1000820,CFG
+1000828,1000839,CFG
+1000829,1000828,CFG
+1000830,1000833,CFG
+1000832,1000830,CFG
+1000833,1000829,CFG
+1000835,1000846,CFG
+1000836,1000835,CFG
+1000837,1000840,CFG
+1000839,1000837,CFG
+1000840,1000836,CFG
+1000842,1000853,CFG
+1000843,1000842,CFG
+1000844,1000847,CFG
+1000846,1000844,CFG
+1000847,1000843,CFG
+1000849,1000856,CFG
+1000850,1000849,CFG
+1000851,1000854,CFG
+1000853,1000851,CFG
+1000854,1000850,CFG
+1000856,1000858,CFG
+1000858,1000862,CFG
+1000862,1000866,CFG
+1000864,1000866,CFG
+1000586,1000597,CFG
+1000642,1000866,DDG<RET>
+1000691,1000866,DDG<RET>
+1000761,1000866,DDG<RET>
+1000862,1000866,DDG<RET>
+1000864,1000866,DDG<RET>
+1000586,1000866,DDG
+1000586,1000587,DDG
+1000586,1000588,DDG
+1000588,1000592,DDGu
+1000586,1000592,DDG
+1000588,1000594,DDGu
+1000586,1000594,DDG
+1000588,1000595,DDGu
+1000586,1000595,DDG
+1000586,1000600,DDG
+1000606,1000603,DDGun
+1000600,1000603,DDGun
+1000586,1000603,DDG
+1000586,1000606,DDG
+1000600,1000606,DDGun
+1000592,1000610,DDGstatus
+1000586,1000610,DDG
+1000606,1000610,DDGun
+1000600,1000610,DDGun
+1000586,1000612,DDG
+1000606,1000612,DDGun
+1000600,1000612,DDGun
+1000619,1000618,DDGu->peer.tries
+1000619,1000618,DDG1
+1000586,1000619,DDG
+1000588,1000619,DDGu
+1000619,1000620,DDGu->peer.tries
+1000586,1000620,DDG
+1000588,1000620,DDGu
+1000586,1000621,DDG
+1000588,1000621,DDGu
+1000626,1000618,DDGu->conf->next_upstream
+1000626,1000618,DDGun->mask
+1000586,1000626,DDG
+1000586,1000627,DDG
+1000586,1000628,DDG
+1000606,1000626,DDGun
+1000600,1000626,DDGun
+1000586,1000632,DDG
+1000606,1000632,DDGun
+1000600,1000632,DDGun
+1000586,1000636,DDG
+1000588,1000636,DDGu
+1000606,1000636,DDGun
+1000600,1000636,DDGun
+1000586,1000639,DDG
+1000606,1000639,DDGun
+1000600,1000639,DDGun
+1000643,1000642,DDGNGX_OK
+1000586,1000642,DDG
+1000586,1000643,DDG
+1000646,1000645,DDGu->cache_status
+1000646,1000645,DDGNGX_HTTP_CACHE_EXPIRED
+1000586,1000646,DDG
+1000586,1000647,DDG
+1000651,1000645,DDGu->conf->cache_use_stale & un->mask
+1000651,1000645,DDGr->cache->stale_error
+1000652,1000651,DDGu->conf->cache_use_stale
+1000652,1000651,DDGun->mask
+1000586,1000652,DDG
+1000586,1000653,DDG
+1000586,1000654,DDG
+1000606,1000652,DDGun
+1000600,1000652,DDGun
+1000586,1000658,DDG
+1000606,1000658,DDGun
+1000600,1000658,DDGun
+1000586,1000651,DDG
+1000586,1000661,DDG
+1000586,1000662,DDG
+1000670,1000668,DDGr
+1000586,1000668,DDG
+1000586,1000670,DDG
+1000668,1000673,DDGrc
+1000586,1000673,DDG
+1000586,1000677,DDG
+1000586,1000678,DDG
+1000684,1000682,DDGr
+1000684,1000682,DDGu
+1000586,1000682,DDG
+1000670,1000684,DDGr
+1000586,1000684,DDG
+1000670,1000687,DDGr
+1000684,1000687,DDGr
+1000586,1000687,DDG
+1000684,1000687,DDGu
+1000673,1000687,DDGrc
+1000682,1000687,DDGrc
+1000692,1000691,DDGNGX_OK
+1000673,1000691,DDGNGX_OK
+1000586,1000692,DDG
+1000695,1000694,DDGstatus
+1000695,1000694,DDGNGX_HTTP_NOT_MODIFIED
+1000592,1000695,DDGstatus
+1000610,1000695,DDGstatus
+1000586,1000695,DDG
+1000698,1000694,DDGu->cache_status == NGX_HTTP_CACHE_EXPIRED
+1000698,1000694,DDGu->conf->cache_revalidate
+1000645,1000698,DDGu->cache_status == NGX_HTTP_CACHE_EXPIRED
+1000699,1000698,DDGu->cache_status
+1000699,1000698,DDGNGX_HTTP_CACHE_EXPIRED
+1000586,1000699,DDG
+1000588,1000699,DDGu
+1000586,1000700,DDG
+1000588,1000700,DDGu
+1000646,1000699,DDGNGX_HTTP_CACHE_EXPIRED
+1000586,1000698,DDG
+1000588,1000698,DDGu
+1000586,1000704,DDG
+1000588,1000704,DDGu
+1000586,1000705,DDG
+1000588,1000705,DDGu
+1000586,1000715,DDG
+1000586,1000717,DDG
+1000586,1000718,DDG
+1000586,1000724,DDG
+1000586,1000727,DDG
+1000586,1000729,DDG
+1000586,1000730,DDG
+1000586,1000734,DDG
+1000586,1000736,DDG
+1000586,1000737,DDG
+1000586,1000741,DDG
+1000586,1000743,DDG
+1000586,1000744,DDG
+1000750,1000748,DDGr
+1000586,1000748,DDG
+1000586,1000750,DDG
+1000748,1000753,DDGrc
+1000586,1000753,DDG
+1000750,1000757,DDGr
+1000586,1000757,DDG
+1000588,1000757,DDGu
+1000753,1000757,DDGrc
+1000762,1000761,DDGNGX_OK
+1000753,1000761,DDGNGX_OK
+1000586,1000762,DDG
+1000586,1000763,DDG
+1000586,1000764,DDG
+1000588,1000764,DDGu
+1000770,1000768,DDGr
+1000770,1000768,DDGu
+1000586,1000768,DDG
+1000750,1000770,DDGr
+1000586,1000770,DDG
+1000588,1000770,DDGu
+1000727,1000774,DDGvalid
+1000586,1000774,DDG
+1000770,1000778,DDGr
+1000586,1000778,DDG
+1000770,1000780,DDGr
+1000586,1000780,DDG
+1000770,1000781,DDGr
+1000586,1000781,DDG
+1000586,1000785,DDG
+1000770,1000785,DDGr
+1000586,1000787,DDG
+1000770,1000787,DDGr
+1000586,1000788,DDG
+1000770,1000788,DDGr
+1000586,1000792,DDG
+1000770,1000792,DDGr
+1000586,1000794,DDG
+1000770,1000794,DDGr
+1000586,1000795,DDG
+1000770,1000795,DDGr
+1000778,1000800,DDGvalid
+1000774,1000800,DDGvalid
+1000586,1000800,DDG
+1000806,1000804,DDGu->conf->cache_valid
+1000806,1000804,DDGu->headers_in.status_n
+1000586,1000804,DDG
+1000770,1000806,DDGu
+1000586,1000806,DDG
+1000770,1000807,DDGu
+1000586,1000807,DDG
+1000770,1000808,DDGu
+1000586,1000808,DDG
+1000588,1000806,DDGu
+1000588,1000812,DDGu
+1000586,1000812,DDG
+1000770,1000812,DDGu
+1000586,1000813,DDG
+1000770,1000813,DDGu
+1000586,1000818,DDG
+1000724,1000820,DDGnow
+1000586,1000820,DDG
+1000804,1000820,DDGvalid
+1000724,1000822,DDGnow
+1000586,1000822,DDG
+1000804,1000822,DDGvalid
+1000586,1000826,DDG
+1000820,1000828,DDGvalid
+1000800,1000828,DDGvalid
+1000804,1000828,DDGvalid
+1000586,1000828,DDG
+1000770,1000829,DDGr
+1000586,1000829,DDG
+1000770,1000830,DDGr
+1000586,1000830,DDG
+1000734,1000835,DDGupdating
+1000785,1000835,DDGupdating
+1000586,1000835,DDG
+1000586,1000836,DDG
+1000770,1000836,DDGr
+1000586,1000837,DDG
+1000770,1000837,DDGr
+1000792,1000842,DDGerror
+1000741,1000842,DDGerror
+1000586,1000842,DDG
+1000586,1000843,DDG
+1000770,1000843,DDGr
+1000586,1000844,DDG
+1000770,1000844,DDGr
+1000724,1000849,DDGnow
+1000586,1000849,DDG
+1000586,1000850,DDG
+1000770,1000850,DDGr
+1000586,1000851,DDG
+1000770,1000851,DDGr
+1000586,1000856,DDG
+1000770,1000856,DDGr
+1000856,1000858,DDGr
+1000770,1000858,DDGr
+1000586,1000858,DDG
+1000770,1000858,DDGu
+1000768,1000858,DDGrc
+1000863,1000862,DDGNGX_OK
+1000753,1000862,DDGNGX_OK
+1000586,1000863,DDG
+1000865,1000864,DDGNGX_DECLINED
+1000586,1000864,DDG
+1000586,1000865,DDG
+1000603,1000614,CDG
+1000603,1000612,CDG
+1000603,1000610,CDG
+1000603,1000695,CDG
+1000603,1000694,CDG
+1000610,1000606,CDG
+1000610,1000605,CDG
+1000610,1000603,CDG
+1000610,1000624,CDG
+1000610,1000623,CDG
+1000610,1000621,CDG
+1000610,1000620,CDG
+1000610,1000619,CDG
+1000610,1000618,CDG
+1000618,1000639,CDG
+1000618,1000636,CDG
+1000618,1000649,CDG
+1000618,1000647,CDG
+1000618,1000646,CDG
+1000618,1000645,CDG
+1000618,1000642,CDG
+1000618,1000641,CDG
+1000619,1000634,CDG
+1000619,1000632,CDG
+1000619,1000631,CDG
+1000619,1000630,CDG
+1000619,1000628,CDG
+1000619,1000627,CDG
+1000619,1000626,CDG
+1000645,1000606,CDG
+1000645,1000605,CDG
+1000645,1000603,CDG
+1000645,1000670,CDG
+1000645,1000668,CDG
+1000645,1000687,CDG
+1000645,1000673,CDG
+1000645,1000691,CDG
+1000646,1000656,CDG
+1000646,1000654,CDG
+1000646,1000653,CDG
+1000646,1000652,CDG
+1000646,1000651,CDG
+1000646,1000660,CDG
+1000646,1000658,CDG
+1000646,1000657,CDG
+1000652,1000665,CDG
+1000652,1000664,CDG
+1000652,1000662,CDG
+1000652,1000661,CDG
+1000673,1000684,CDG
+1000673,1000682,CDG
+1000673,1000680,CDG
+1000673,1000678,CDG
+1000673,1000677,CDG
+1000694,1000720,CDG
+1000694,1000718,CDG
+1000694,1000717,CDG
+1000694,1000715,CDG
+1000694,1000736,CDG
+1000694,1000734,CDG
+1000694,1000733,CDG
+1000694,1000732,CDG
+1000694,1000730,CDG
+1000694,1000729,CDG
+1000694,1000727,CDG
+1000694,1000726,CDG
+1000694,1000724,CDG
+1000694,1000721,CDG
+1000694,1000750,CDG
+1000694,1000748,CDG
+1000694,1000747,CDG
+1000694,1000746,CDG
+1000694,1000744,CDG
+1000694,1000743,CDG
+1000694,1000741,CDG
+1000694,1000740,CDG
+1000694,1000739,CDG
+1000694,1000737,CDG
+1000694,1000753,CDG
+1000694,1000864,CDG
+1000695,1000702,CDG
+1000695,1000700,CDG
+1000695,1000699,CDG
+1000695,1000698,CDG
+1000699,1000704,CDG
+1000699,1000708,CDG
+1000699,1000707,CDG
+1000699,1000705,CDG
+1000753,1000768,CDG
+1000753,1000766,CDG
+1000753,1000764,CDG
+1000753,1000763,CDG
+1000753,1000761,CDG
+1000753,1000757,CDG
+1000753,1000774,CDG
+1000753,1000770,CDG
+1000753,1000800,CDG
+1000753,1000862,CDG
+1000753,1000858,CDG
+1000753,1000832,CDG
+1000753,1000830,CDG
+1000753,1000829,CDG
+1000753,1000828,CDG
+1000753,1000847,CDG
+1000753,1000846,CDG
+1000753,1000844,CDG
+1000753,1000843,CDG
+1000753,1000842,CDG
+1000753,1000840,CDG
+1000753,1000839,CDG
+1000753,1000837,CDG
+1000753,1000836,CDG
+1000753,1000835,CDG
+1000753,1000833,CDG
+1000753,1000856,CDG
+1000753,1000854,CDG
+1000753,1000853,CDG
+1000753,1000851,CDG
+1000753,1000850,CDG
+1000753,1000849,CDG
+1000774,1000784,CDG
+1000774,1000783,CDG
+1000774,1000781,CDG
+1000774,1000780,CDG
+1000774,1000778,CDG
+1000774,1000798,CDG
+1000774,1000797,CDG
+1000774,1000795,CDG
+1000774,1000794,CDG
+1000774,1000792,CDG
+1000774,1000791,CDG
+1000774,1000790,CDG
+1000774,1000788,CDG
+1000774,1000787,CDG
+1000774,1000785,CDG
+1000800,1000816,CDG
+1000800,1000815,CDG
+1000800,1000813,CDG
+1000800,1000812,CDG
+1000800,1000811,CDG
+1000800,1000810,CDG
+1000800,1000808,CDG
+1000800,1000807,CDG
+1000800,1000806,CDG
+1000800,1000804,CDG
+1000800,1000822,CDG
+1000800,1000820,CDG

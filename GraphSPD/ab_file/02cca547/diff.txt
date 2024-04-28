@@ -1,0 +1,64 @@
+diff -brN -U 0 -p ./ab_file/02cca547/a/ngx_process_cycle.c ./ab_file/02cca547/b/ngx_process_cycle.c
+--- ./ab_file/02cca547/a/ngx_process_cycle.c	2024-04-11 16:21:06.000000000 +0800
++++ ./ab_file/02cca547/b/ngx_process_cycle.c	2024-04-11 16:21:06.000000000 +0800
+@@ -18 +18 @@ static void ngx_start_cache_manager_proc
+-static void ngx_pass_open_channel(ngx_cycle_t *cycle, ngx_channel_t *ch);
++static void ngx_pass_open_channel(ngx_cycle_t *cycle);
+@@ -339 +338,0 @@ ngx_start_worker_processes(ngx_cycle_t *
+-    ngx_channel_t  ch;
+@@ -343,4 +341,0 @@ ngx_start_worker_processes(ngx_cycle_t *
+-    ngx_memzero(&ch, sizeof(ngx_channel_t));
+-
+-    ch.command = NGX_CMD_OPEN_CHANNEL;
+-
+@@ -352,5 +347 @@ ngx_start_worker_processes(ngx_cycle_t *
+-        ch.pid = ngx_processes[ngx_process_slot].pid;
+-        ch.slot = ngx_process_slot;
+-        ch.fd = ngx_processes[ngx_process_slot].channel[0];
+-
+-        ngx_pass_open_channel(cycle, &ch);
++        ngx_pass_open_channel(cycle);
+@@ -366 +356,0 @@ ngx_start_cache_manager_processes(ngx_cy
+-    ngx_channel_t    ch;
+@@ -391,8 +381 @@ ngx_start_cache_manager_processes(ngx_cy
+-    ngx_memzero(&ch, sizeof(ngx_channel_t));
+-
+-    ch.command = NGX_CMD_OPEN_CHANNEL;
+-    ch.pid = ngx_processes[ngx_process_slot].pid;
+-    ch.slot = ngx_process_slot;
+-    ch.fd = ngx_processes[ngx_process_slot].channel[0];
+-
+-    ngx_pass_open_channel(cycle, &ch);
++    ngx_pass_open_channel(cycle);
+@@ -408,6 +391 @@ ngx_start_cache_manager_processes(ngx_cy
+-    ch.command = NGX_CMD_OPEN_CHANNEL;
+-    ch.pid = ngx_processes[ngx_process_slot].pid;
+-    ch.slot = ngx_process_slot;
+-    ch.fd = ngx_processes[ngx_process_slot].channel[0];
+-
+-    ngx_pass_open_channel(cycle, &ch);
++    ngx_pass_open_channel(cycle);
+@@ -418 +396 @@ static void
+-ngx_pass_open_channel(ngx_cycle_t *cycle, ngx_channel_t *ch)
++ngx_pass_open_channel(ngx_cycle_t *cycle)
+@@ -420,0 +399,6 @@ ngx_pass_open_channel(ngx_cycle_t *cycle
++    ngx_channel_t  ch;
++
++    ch.command = NGX_CMD_OPEN_CHANNEL;
++    ch.pid = ngx_processes[ngx_process_slot].pid;
++    ch.slot = ngx_process_slot;
++    ch.fd = ngx_processes[ngx_process_slot].channel[0];
+@@ -433 +417 @@ ngx_pass_open_channel(ngx_cycle_t *cycle
+-                      ch->slot, ch->pid, ch->fd,
++                      ch.slot, ch.pid, ch.fd,
+@@ -440 +424 @@ ngx_pass_open_channel(ngx_cycle_t *cycle
+-                          ch, sizeof(ngx_channel_t), cycle->log);
++                          &ch, sizeof(ngx_channel_t), cycle->log);
+@@ -624,6 +608 @@ ngx_reap_children(ngx_cycle_t *cycle)
+-                ch.command = NGX_CMD_OPEN_CHANNEL;
+-                ch.pid = ngx_processes[ngx_process_slot].pid;
+-                ch.slot = ngx_process_slot;
+-                ch.fd = ngx_processes[ngx_process_slot].channel[0];
+-
+-                ngx_pass_open_channel(cycle, &ch);
++                ngx_pass_open_channel(cycle);

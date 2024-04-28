@@ -1,0 +1,13 @@
+digraph ngx_http_set_write_handler
+--------
+1000206,(COLUMN_NUMBER,0),(LINE_NUMBER,46),(COLUMN_NUMBER_END,66),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_set_write_handler (ngx_http_request_t *)),(NAME,ngx_http_set_write_handler),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_set_write_handler (ngx_http_request_t *r)),(FULL_NAME,ngx_http_set_write_handler),(LINE_NUMBER_END,46),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/bd7dad5b/a/ngx_http_request.c),(METHOD,ngx_http_set_write_handler)
+1000207,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,44),(LINE_NUMBER,46),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000208,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000209,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,46),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000206,1000207,AST
+1000206,1000208,AST
+1000206,1000209,AST
+1000206,1000209,CFG
+1000206,1000209,DDG
+1000206,1000207,DDG

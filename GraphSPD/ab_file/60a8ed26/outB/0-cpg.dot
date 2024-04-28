@@ -1,0 +1,22 @@
+digraph ngx_ssl_load_certificate_key
+--------
+1000128,(COLUMN_NUMBER,0),(LINE_NUMBER,23),(COLUMN_NUMBER_END,43),(IS_EXTERNAL,false),(SIGNATURE,static EVP_PKEY * ngx_ssl_load_certificate_key (ngx_pool_t *,char * *,ngx_str_t *,ngx_array_t *)),(NAME,ngx_ssl_load_certificate_key),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_ssl_load_certificate_key (ngx_pool_t *pool,char **err,ngx_str_t *key,ngx_array_t *passwords)),(FULL_NAME,ngx_ssl_load_certificate_key),(LINE_NUMBER_END,24),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/60a8ed26/b/ngx_event_openssl.c),(METHOD,ngx_ssl_load_certificate_key)
+1000129,(ORDER,1),(CODE,ngx_pool_t *pool),(COLUMN_NUMBER,46),(LINE_NUMBER,23),(TYPE_FULL_NAME,ngx_pool_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,pool),(PARAM,ngx_pool_t *pool)
+1000130,(ORDER,2),(CODE,char **err),(COLUMN_NUMBER,64),(LINE_NUMBER,23),(TYPE_FULL_NAME,char * *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,err),(PARAM,char **err)
+1000131,(ORDER,3),(CODE,ngx_str_t *key),(COLUMN_NUMBER,4),(LINE_NUMBER,24),(TYPE_FULL_NAME,ngx_str_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,key),(PARAM,ngx_str_t *key)
+1000132,(ORDER,4),(CODE,ngx_array_t *passwords),(COLUMN_NUMBER,20),(LINE_NUMBER,24),(TYPE_FULL_NAME,ngx_array_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,passwords),(PARAM,ngx_array_t *passwords)
+1000133,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000134,(ORDER,6),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,23),(TYPE_FULL_NAME,static EVP_PKEY *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static EVP_PKEY *)
+--------
+1000128,1000129,AST
+1000128,1000130,AST
+1000128,1000131,AST
+1000128,1000132,AST
+1000128,1000133,AST
+1000128,1000134,AST
+1000128,1000134,CFG
+1000128,1000134,DDG
+1000128,1000129,DDG
+1000128,1000130,DDG
+1000128,1000131,DDG
+1000128,1000132,DDG

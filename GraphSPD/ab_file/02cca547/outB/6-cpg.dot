@@ -1,0 +1,16 @@
+digraph ngx_cache_manager_process_cycle
+--------
+1000151,(COLUMN_NUMBER,0),(LINE_NUMBER,26),(COLUMN_NUMBER_END,75),(IS_EXTERNAL,false),(SIGNATURE,static void ngx_cache_manager_process_cycle (ngx_cycle_t *,void *)),(NAME,ngx_cache_manager_process_cycle),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_cache_manager_process_cycle (ngx_cycle_t *cycle,void *data)),(FULL_NAME,ngx_cache_manager_process_cycle),(LINE_NUMBER_END,26),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/02cca547/b/ngx_process_cycle.c),(METHOD,ngx_cache_manager_process_cycle)
+1000152,(ORDER,1),(CODE,ngx_cycle_t *cycle),(COLUMN_NUMBER,44),(LINE_NUMBER,26),(TYPE_FULL_NAME,ngx_cycle_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(PARAM,ngx_cycle_t *cycle)
+1000153,(ORDER,2),(CODE,void *data),(COLUMN_NUMBER,64),(LINE_NUMBER,26),(TYPE_FULL_NAME,void *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,data),(PARAM,void *data)
+1000154,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000155,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,26),(TYPE_FULL_NAME,static void),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static void)
+--------
+1000151,1000152,AST
+1000151,1000153,AST
+1000151,1000154,AST
+1000151,1000155,AST
+1000151,1000155,CFG
+1000151,1000155,DDG
+1000151,1000152,DDG
+1000151,1000153,DDG

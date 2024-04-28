@@ -1,0 +1,44 @@
+diff -brN -U 0 -p ./ab_file/fc785b12/a/ngx_http_upstream.c ./ab_file/fc785b12/b/ngx_http_upstream.c
+--- ./ab_file/fc785b12/a/ngx_http_upstream.c	2024-04-11 16:21:08.000000000 +0800
++++ ./ab_file/fc785b12/b/ngx_http_upstream.c	2024-04-11 16:21:08.000000000 +0800
+@@ -115,0 +116,2 @@ static ngx_int_t
++static ngx_int_t ngx_http_upstream_process_vary(ngx_http_request_t *r,
++    ngx_table_elt_t *h, ngx_uint_t offset);
+@@ -252,0 +255,4 @@ ngx_http_upstream_header_t  ngx_http_ups
++    { ngx_string("Vary"),
++                 ngx_http_upstream_process_vary, 0,
++                 ngx_http_upstream_copy_header_line, 0, 0 },
++
+@@ -409,0 +416 @@ ngx_conf_bitmask_t  ngx_http_upstream_ig
++    { ngx_string("Vary"), NGX_HTTP_UPSTREAM_IGN_VARY },
+@@ -4141,0 +4149,23 @@ static ngx_int_t
++ngx_http_upstream_process_vary(ngx_http_request_t *r,
++    ngx_table_elt_t *h, ngx_uint_t offset)
++{
++    ngx_http_upstream_t  *u;
++
++    u = r->upstream;
++    u->headers_in.vary = h;
++
++#if (NGX_HTTP_CACHE)
++
++    if (u->conf->ignore_headers & NGX_HTTP_UPSTREAM_IGN_VARY) {
++        return NGX_OK;
++    }
++
++    u->cacheable = 0;
++
++#endif
++
++    return NGX_OK;
++}
++
++
++static ngx_int_t
+diff -brN -U 0 -p ./ab_file/fc785b12/a/ngx_http_upstream.h ./ab_file/fc785b12/b/ngx_http_upstream.h
+--- ./ab_file/fc785b12/a/ngx_http_upstream.h	2024-04-11 16:21:08.000000000 +0800
++++ ./ab_file/fc785b12/b/ngx_http_upstream.h	2024-04-11 16:21:08.000000000 +0800
+@@ -52,0 +53 @@
++#define NGX_HTTP_UPSTREAM_IGN_VARY           0x00000200
+@@ -246,0 +248 @@ typedef struct {
++    ngx_table_elt_t                 *vary;

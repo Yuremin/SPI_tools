@@ -1,15 +1,13 @@
 import os,re
 from gensim.models import Word2Vec
 import numpy as np
-
-
-
+from tqdm import tqdm
 
 
 
 def generate_embedding(path):
     """
-    
+    Use word2vec to generate embeddings of code
     """
     word2vec4text_model = Word2Vec.load("saved_models/w2v_patchdb/word2vec4text.model")
     word2vec4code_model = Word2Vec.load("saved_models/w2v_patchdb/word2vec4code.model")
@@ -23,7 +21,7 @@ def generate_embedding(path):
             file_list.append(os.path.join(root,f))
     
     pattern_message = r"commit [a-f0-9]{40}\n(?:.|\n)*?\n\n([\s\S]*?)(?=\ndiff)"
-    for fname in file_list:
+    for fname in tqdm(file_list):
         with open(fname, "r", errors='replace') as f:
             lines = f.readlines()
             both_code = []
@@ -55,11 +53,11 @@ def generate_embedding(path):
             code_vector = word2vec4code_model.wv[filtered_code]
         message_vector = word2vec4text_model.wv[filtered_commit_message]
         label = 1 if "/yes/" in fname else 0
-        vector_file = fname.replace('commit', 'vector')
+        vector_file = fname.replace('commit', 'vector_spi')
         with open(vector_file, "wb") as f:
             np.savez(vector_file, code_vector=code_vector, message_vector=message_vector, label=label, dtype=object)
     return 
 
 
 if __name__ == '__main__':
-    generate_embedding("data/detection/patchdb")
+    generate_embedding("/Users/min/Code/SPI/MrSPI/data/1000samples_patchdb")

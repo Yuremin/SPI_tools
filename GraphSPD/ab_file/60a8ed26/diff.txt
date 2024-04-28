@@ -1,0 +1,52 @@
+diff -brN -U 0 -p ./ab_file/60a8ed26/a/ngx_event_openssl.c ./ab_file/60a8ed26/b/ngx_event_openssl.c
+--- ./ab_file/60a8ed26/a/ngx_event_openssl.c	2024-04-11 16:21:08.000000000 +0800
++++ ./ab_file/60a8ed26/b/ngx_event_openssl.c	2024-04-11 16:21:08.000000000 +0800
+@@ -1022 +1022,11 @@ ngx_ssl_verify_callback(int ok, X509_STO
+-    subject = sname ? X509_NAME_oneline(sname, NULL, 0) : "(none)";
++
++    if (sname) {
++        subject = X509_NAME_oneline(sname, NULL, 0);
++        if (subject == NULL) {
++            ngx_ssl_error(NGX_LOG_ALERT, c->log, 0,
++                          "X509_NAME_oneline() failed");
++        }
++
++    } else {
++        subject = NULL;
++    }
+@@ -1025 +1035,11 @@ ngx_ssl_verify_callback(int ok, X509_STO
+-    issuer = iname ? X509_NAME_oneline(iname, NULL, 0) : "(none)";
++
++    if (iname) {
++        issuer = X509_NAME_oneline(iname, NULL, 0);
++        if (issuer == NULL) {
++            ngx_ssl_error(NGX_LOG_ALERT, c->log, 0,
++                          "X509_NAME_oneline() failed");
++        }
++
++    } else {
++        issuer = NULL;
++    }
+@@ -1030 +1050,3 @@ ngx_ssl_verify_callback(int ok, X509_STO
+-                   ok, err, depth, subject, issuer);
++                   ok, err, depth,
++                   subject ? subject : "(none)",
++                   issuer ? issuer : "(none)");
+@@ -1032 +1054 @@ ngx_ssl_verify_callback(int ok, X509_STO
+-    if (sname) {
++    if (subject) {
+@@ -1036 +1058 @@ ngx_ssl_verify_callback(int ok, X509_STO
+-    if (iname) {
++    if (issuer) {
+@@ -4902,0 +4925,5 @@ ngx_ssl_get_subject_dn_legacy(ngx_connec
++    if (p == NULL) {
++        ngx_ssl_error(NGX_LOG_ALERT, c->log, 0, "X509_NAME_oneline() failed");
++        X509_free(cert);
++        return NGX_ERROR;
++    }
+@@ -4945,0 +4973,5 @@ ngx_ssl_get_issuer_dn_legacy(ngx_connect
++    if (p == NULL) {
++        ngx_ssl_error(NGX_LOG_ALERT, c->log, 0, "X509_NAME_oneline() failed");
++        X509_free(cert);
++        return NGX_ERROR;
++    }

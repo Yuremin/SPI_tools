@@ -1,0 +1,25 @@
+digraph ngx_http_find_virtual_server
+--------
+1000181,(COLUMN_NUMBER,0),(LINE_NUMBER,38),(COLUMN_NUMBER_END,60),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_find_virtual_server (ngx_connection_t *,ngx_http_virtual_names_t *,ngx_str_t *,ngx_http_request_t *,ngx_http_core_srv_conf_t * *)),(NAME,ngx_http_find_virtual_server),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_find_virtual_server (ngx_connection_t *c,ngx_http_virtual_names_t *virtual_names,ngx_str_t *host,ngx_http_request_t *r,ngx_http_core_srv_conf_t **cscfp)),(FULL_NAME,ngx_http_find_virtual_server),(LINE_NUMBER_END,40),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/bd7dad5b/a/ngx_http_request.c),(METHOD,ngx_http_find_virtual_server)
+1000182,(ORDER,1),(CODE,ngx_connection_t *c),(COLUMN_NUMBER,46),(LINE_NUMBER,38),(TYPE_FULL_NAME,ngx_connection_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,c),(PARAM,ngx_connection_t *c)
+1000183,(ORDER,2),(CODE,ngx_http_virtual_names_t *virtual_names),(COLUMN_NUMBER,4),(LINE_NUMBER,39),(TYPE_FULL_NAME,ngx_http_virtual_names_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,virtual_names),(PARAM,ngx_http_virtual_names_t *virtual_names)
+1000184,(ORDER,3),(CODE,ngx_str_t *host),(COLUMN_NUMBER,45),(LINE_NUMBER,39),(TYPE_FULL_NAME,ngx_str_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,host),(PARAM,ngx_str_t *host)
+1000185,(ORDER,4),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,4),(LINE_NUMBER,40),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000186,(ORDER,5),(CODE,ngx_http_core_srv_conf_t **cscfp),(COLUMN_NUMBER,27),(LINE_NUMBER,40),(TYPE_FULL_NAME,ngx_http_core_srv_conf_t * *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cscfp),(PARAM,ngx_http_core_srv_conf_t **cscfp)
+1000187,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000188,(ORDER,7),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,38),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000181,1000182,AST
+1000181,1000183,AST
+1000181,1000184,AST
+1000181,1000185,AST
+1000181,1000186,AST
+1000181,1000187,AST
+1000181,1000188,AST
+1000181,1000188,CFG
+1000181,1000188,DDG
+1000181,1000182,DDG
+1000181,1000183,DDG
+1000181,1000184,DDG
+1000181,1000185,DDG
+1000181,1000186,DDG

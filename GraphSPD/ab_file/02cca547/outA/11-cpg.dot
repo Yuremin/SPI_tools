@@ -1,0 +1,395 @@
+digraph ngx_pass_open_channel
+--------
+1000401,(COLUMN_NUMBER,0),(LINE_NUMBER,417),(COLUMN_NUMBER_END,0),(IS_EXTERNAL,false),(SIGNATURE,static void ngx_pass_open_channel (ngx_cycle_t *,ngx_channel_t *)),(NAME,ngx_pass_open_channel),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_pass_open_channel (ngx_cycle_t *cycle,ngx_channel_t *ch)),(FULL_NAME,ngx_pass_open_channel),(LINE_NUMBER_END,448),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/02cca547/a/ngx_process_cycle.c),(METHOD,ngx_pass_open_channel)
+1000402,(ORDER,1),(CODE,ngx_cycle_t *cycle),(COLUMN_NUMBER,22),(LINE_NUMBER,418),(TYPE_FULL_NAME,ngx_cycle_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(PARAM,ngx_cycle_t *cycle)
+1000403,(ORDER,2),(CODE,ngx_channel_t *ch),(COLUMN_NUMBER,42),(LINE_NUMBER,418),(TYPE_FULL_NAME,ngx_channel_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ch),(PARAM,ngx_channel_t *ch)
+1000404,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(COLUMN_NUMBER,0),(TYPE_FULL_NAME,void),(LINE_NUMBER,419),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000405,(TYPE_FULL_NAME,ngx_int_t),(ORDER,1),(CODE,i),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(LOCAL,i: ngx_int_t)
+1000406,(PARSER_TYPE_NAME,ForStatement),(ORDER,2),(LINE_NUMBER,428),(ARGUMENT_INDEX,2),(CODE,for (i = 0; i < ngx_last_process; i++)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,for (i = 0; i < ngx_last_process; i++),for (i = 0; i < ngx_last_process; i++))
+1000407,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i = 0),(COLUMN_NUMBER,9),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,428),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,i = 0)
+1000408,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,9),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,428),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i = 0)
+1000409,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,int),(LINE_NUMBER,428),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,i = 0)
+1000410,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i < ngx_last_process),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,428),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,i < ngx_last_process)
+1000411,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,428),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i < ngx_last_process)
+1000412,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_last_process),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,428),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_last_process),(IDENTIFIER,ngx_last_process,i < ngx_last_process)
+1000413,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,i++),(COLUMN_NUMBER,38),(METHOD_FULL_NAME,<operator>.postIncrement),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,428),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.postIncrement),(<operator>.postIncrement,i++)
+1000414,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,38),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,428),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i++)
+1000415,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(COLUMN_NUMBER,43),(TYPE_FULL_NAME,void),(LINE_NUMBER,428),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000416,(PARSER_TYPE_NAME,IfStatement),(ORDER,1),(LINE_NUMBER,430),(ARGUMENT_INDEX,1),(CODE,if (i == ngx_process_slot\n            || ngx_processes[i].pid == -1\n            || ngx_processes[i].channel[0] == -1)),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (i == ngx_process_slot\n            || ngx_processes[i].pid == -1\n            || ngx_processes[i].channel[0] == -1),if (i == ngx_process_slot\n            || ngx_processes[i].pid == -1\n            || ngx_processes[i].channel[0] == -1))
+1000417,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i == ngx_process_slot\n            || ngx_processes[i].pid == -1\n            || ngx_processes[i].channel[0] == -1),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,430),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,i == ngx_process_slot\n            || ngx_processes[i].pid == -1\n            || ngx_processes[i].channel[0] == -1)
+1000418,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i == ngx_process_slot),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,430),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,i == ngx_process_slot)
+1000419,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,12),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,430),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i == ngx_process_slot)
+1000420,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_process_slot),(COLUMN_NUMBER,17),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,430),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_process_slot),(IDENTIFIER,ngx_process_slot,i == ngx_process_slot)
+1000421,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_processes[i].pid == -1\n            || ngx_processes[i].channel[0] == -1),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,431),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,ngx_processes[i].pid == -1\n            || ngx_processes[i].channel[0] == -1)
+1000422,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i].pid == -1),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,431),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,ngx_processes[i].pid == -1)
+1000423,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i].pid),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,431),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ngx_processes[i].pid)
+1000424,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i]),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,431),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ngx_processes[i])
+1000425,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes),(COLUMN_NUMBER,15),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,431),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_processes),(IDENTIFIER,ngx_processes,ngx_processes[i].pid == -1)
+1000426,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,431),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,ngx_processes[i].pid == -1)
+1000427,(ORDER,2),(LINE_NUMBER,431),(ARGUMENT_INDEX,2),(CODE,pid),(COLUMN_NUMBER,32),(CANONICAL_NAME,pid),(FIELD_IDENTIFIER,pid,pid)
+1000428,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,-1),(COLUMN_NUMBER,39),(METHOD_FULL_NAME,<operator>.minus),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,431),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.minus),(<operator>.minus,-1)
+1000429,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,1),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,int),(LINE_NUMBER,431),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,-1)
+1000430,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_processes[i].channel[0] == -1),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,432),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,ngx_processes[i].channel[0] == -1)
+1000431,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i].channel[0]),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,432),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ngx_processes[i].channel[0])
+1000432,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i].channel),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,432),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ngx_processes[i].channel)
+1000433,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i]),(COLUMN_NUMBER,15),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,432),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ngx_processes[i])
+1000434,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes),(COLUMN_NUMBER,15),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,432),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_processes),(IDENTIFIER,ngx_processes,ngx_processes[i].channel[0] == -1)
+1000435,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,432),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,ngx_processes[i].channel[0] == -1)
+1000436,(ORDER,2),(LINE_NUMBER,432),(ARGUMENT_INDEX,2),(CODE,channel),(COLUMN_NUMBER,32),(CANONICAL_NAME,channel),(FIELD_IDENTIFIER,channel,channel)
+1000437,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,int),(LINE_NUMBER,432),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ngx_processes[i].channel[0] == -1)
+1000438,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,-1),(COLUMN_NUMBER,46),(METHOD_FULL_NAME,<operator>.minus),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,432),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.minus),(<operator>.minus,-1)
+1000439,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,1),(COLUMN_NUMBER,47),(TYPE_FULL_NAME,int),(LINE_NUMBER,432),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,-1)
+1000440,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,void),(LINE_NUMBER,433),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000441,(PARSER_TYPE_NAME,ContinueStatement),(ORDER,1),(LINE_NUMBER,434),(ARGUMENT_INDEX,1),(CODE,continue;),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,continue;,continue;)
+1000442,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      "pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0])),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,ngx_log_debug6),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,437),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_log_debug6),(ngx_log_debug6,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000443,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NGX_LOG_DEBUG_CORE),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,437),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_LOG_DEBUG_CORE),(IDENTIFIER,NGX_LOG_DEBUG_CORE,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000444,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,cycle->log),(COLUMN_NUMBER,43),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,437),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->log)
+1000445,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,43),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,437),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000446,(ORDER,2),(LINE_NUMBER,437),(ARGUMENT_INDEX,2),(CODE,log),(COLUMN_NUMBER,50),(CANONICAL_NAME,log),(FIELD_IDENTIFIER,log,log)
+1000447,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,0),(COLUMN_NUMBER,55),(TYPE_FULL_NAME,int),(LINE_NUMBER,437),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000448,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d"),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,char *),(LINE_NUMBER,438),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000449,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,ch->slot),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,439),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ch->slot)
+1000450,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ch),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ngx_channel_t *),(LINE_NUMBER,439),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ch),(IDENTIFIER,ch,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000451,(ORDER,2),(LINE_NUMBER,439),(ARGUMENT_INDEX,2),(CODE,slot),(COLUMN_NUMBER,26),(CANONICAL_NAME,slot),(FIELD_IDENTIFIER,slot,slot)
+1000452,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,ch->pid),(COLUMN_NUMBER,32),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,439),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ch->pid)
+1000453,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ch),(COLUMN_NUMBER,32),(TYPE_FULL_NAME,ngx_channel_t *),(LINE_NUMBER,439),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ch),(IDENTIFIER,ch,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000454,(ORDER,2),(LINE_NUMBER,439),(ARGUMENT_INDEX,2),(CODE,pid),(COLUMN_NUMBER,36),(CANONICAL_NAME,pid),(FIELD_IDENTIFIER,pid,pid)
+1000455,(ORDER,7),(ARGUMENT_INDEX,7),(CODE,ch->fd),(COLUMN_NUMBER,41),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,439),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,ch->fd)
+1000456,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ch),(COLUMN_NUMBER,41),(TYPE_FULL_NAME,ngx_channel_t *),(LINE_NUMBER,439),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ch),(IDENTIFIER,ch,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000457,(ORDER,2),(LINE_NUMBER,439),(ARGUMENT_INDEX,2),(CODE,fd),(COLUMN_NUMBER,45),(CANONICAL_NAME,fd),(FIELD_IDENTIFIER,fd,fd)
+1000458,(ORDER,8),(ARGUMENT_INDEX,8),(CODE,i),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,440),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000459,(ORDER,9),(ARGUMENT_INDEX,9),(CODE,ngx_processes[i].pid),(COLUMN_NUMBER,25),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,440),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ngx_processes[i].pid)
+1000460,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i]),(COLUMN_NUMBER,25),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,440),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ngx_processes[i])
+1000461,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes),(COLUMN_NUMBER,25),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,440),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_processes),(IDENTIFIER,ngx_processes,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000462,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,39),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,440),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000463,(ORDER,2),(LINE_NUMBER,440),(ARGUMENT_INDEX,2),(CODE,pid),(COLUMN_NUMBER,42),(CANONICAL_NAME,pid),(FIELD_IDENTIFIER,pid,pid)
+1000464,(ORDER,10),(ARGUMENT_INDEX,10),(CODE,ngx_processes[i].channel[0]),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,441),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ngx_processes[i].channel[0])
+1000465,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i].channel),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,441),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ngx_processes[i].channel)
+1000466,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i]),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,441),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ngx_processes[i])
+1000467,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,441),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_processes),(IDENTIFIER,ngx_processes,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000468,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,441),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000469,(ORDER,2),(LINE_NUMBER,441),(ARGUMENT_INDEX,2),(CODE,channel),(COLUMN_NUMBER,39),(CANONICAL_NAME,channel),(FIELD_IDENTIFIER,channel,channel)
+1000470,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,47),(TYPE_FULL_NAME,int),(LINE_NUMBER,441),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ngx_log_debug6(NGX_LOG_DEBUG_CORE, cycle->log, 0,\n                      \"pass channel s:%i pid:%P fd:%d to s:%i pid:%P fd:%d\",\n                      ch->slot, ch->pid, ch->fd,\n                      i, ngx_processes[i].pid,\n                      ngx_processes[i].channel[0]))
+1000471,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,ngx_write_channel(ngx_processes[i].channel[0],\n                          ch, sizeof(ngx_channel_t), cycle->log)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,ngx_write_channel),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,445),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_write_channel),(ngx_write_channel,ngx_write_channel(ngx_processes[i].channel[0],\n                          ch, sizeof(ngx_channel_t), cycle->log))
+1000472,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i].channel[0]),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,445),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ngx_processes[i].channel[0])
+1000473,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i].channel),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.fieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,445),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.fieldAccess),(<operator>.fieldAccess,ngx_processes[i].channel)
+1000474,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes[i]),(COLUMN_NUMBER,26),(METHOD_FULL_NAME,<operator>.indirectIndexAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,445),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectIndexAccess),(<operator>.indirectIndexAccess,ngx_processes[i])
+1000475,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_processes),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,445),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_processes),(IDENTIFIER,ngx_processes,ngx_write_channel(ngx_processes[i].channel[0],\n                          ch, sizeof(ngx_channel_t), cycle->log))
+1000476,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i),(COLUMN_NUMBER,40),(TYPE_FULL_NAME,ngx_int_t),(LINE_NUMBER,445),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,ngx_write_channel(ngx_processes[i].channel[0],\n                          ch, sizeof(ngx_channel_t), cycle->log))
+1000477,(ORDER,2),(LINE_NUMBER,445),(ARGUMENT_INDEX,2),(CODE,channel),(COLUMN_NUMBER,43),(CANONICAL_NAME,channel),(FIELD_IDENTIFIER,channel,channel)
+1000478,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,51),(TYPE_FULL_NAME,int),(LINE_NUMBER,445),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ngx_write_channel(ngx_processes[i].channel[0],\n                          ch, sizeof(ngx_channel_t), cycle->log))
+1000479,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ch),(COLUMN_NUMBER,26),(TYPE_FULL_NAME,ngx_channel_t *),(LINE_NUMBER,446),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ch),(IDENTIFIER,ch,ngx_write_channel(ngx_processes[i].channel[0],\n                          ch, sizeof(ngx_channel_t), cycle->log))
+1000480,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,sizeof(ngx_channel_t)),(COLUMN_NUMBER,30),(METHOD_FULL_NAME,<operator>.sizeOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,446),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.sizeOf),(<operator>.sizeOf,sizeof(ngx_channel_t))
+1000481,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_channel_t),(COLUMN_NUMBER,37),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,446),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_channel_t),(IDENTIFIER,ngx_channel_t,sizeof(ngx_channel_t))
+1000482,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,cycle->log),(COLUMN_NUMBER,53),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,446),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->log)
+1000483,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,53),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,446),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,ngx_write_channel(ngx_processes[i].channel[0],\n                          ch, sizeof(ngx_channel_t), cycle->log))
+1000484,(ORDER,2),(LINE_NUMBER,446),(ARGUMENT_INDEX,2),(CODE,log),(COLUMN_NUMBER,60),(CANONICAL_NAME,log),(FIELD_IDENTIFIER,log,log)
+1000485,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,417),(TYPE_FULL_NAME,static void),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static void)
+--------
+1000401,1000402,AST
+1000401,1000403,AST
+1000401,1000404,AST
+1000401,1000485,AST
+1000404,1000405,AST
+1000404,1000406,AST
+1000406,1000407,AST
+1000406,1000410,AST
+1000406,1000413,AST
+1000406,1000415,AST
+1000407,1000408,AST
+1000407,1000409,AST
+1000410,1000411,AST
+1000410,1000412,AST
+1000413,1000414,AST
+1000415,1000416,AST
+1000415,1000442,AST
+1000415,1000471,AST
+1000416,1000417,AST
+1000416,1000440,AST
+1000417,1000418,AST
+1000417,1000421,AST
+1000418,1000419,AST
+1000418,1000420,AST
+1000421,1000422,AST
+1000421,1000430,AST
+1000422,1000423,AST
+1000422,1000428,AST
+1000423,1000424,AST
+1000423,1000427,AST
+1000424,1000425,AST
+1000424,1000426,AST
+1000428,1000429,AST
+1000430,1000431,AST
+1000430,1000438,AST
+1000431,1000432,AST
+1000431,1000437,AST
+1000432,1000433,AST
+1000432,1000436,AST
+1000433,1000434,AST
+1000433,1000435,AST
+1000438,1000439,AST
+1000440,1000441,AST
+1000442,1000443,AST
+1000442,1000444,AST
+1000442,1000447,AST
+1000442,1000448,AST
+1000442,1000449,AST
+1000442,1000452,AST
+1000442,1000455,AST
+1000442,1000458,AST
+1000442,1000459,AST
+1000442,1000464,AST
+1000444,1000445,AST
+1000444,1000446,AST
+1000449,1000450,AST
+1000449,1000451,AST
+1000452,1000453,AST
+1000452,1000454,AST
+1000455,1000456,AST
+1000455,1000457,AST
+1000459,1000460,AST
+1000459,1000463,AST
+1000460,1000461,AST
+1000460,1000462,AST
+1000464,1000465,AST
+1000464,1000470,AST
+1000465,1000466,AST
+1000465,1000469,AST
+1000466,1000467,AST
+1000466,1000468,AST
+1000471,1000472,AST
+1000471,1000479,AST
+1000471,1000480,AST
+1000471,1000482,AST
+1000472,1000473,AST
+1000472,1000478,AST
+1000473,1000474,AST
+1000473,1000477,AST
+1000474,1000475,AST
+1000474,1000476,AST
+1000480,1000481,AST
+1000482,1000483,AST
+1000482,1000484,AST
+1000407,1000410,CFG
+1000410,1000485,CFG
+1000410,1000418,CFG
+1000413,1000410,CFG
+1000417,1000413,CFG
+1000417,1000446,CFG
+1000418,1000417,CFG
+1000418,1000424,CFG
+1000421,1000417,CFG
+1000422,1000421,CFG
+1000422,1000433,CFG
+1000423,1000428,CFG
+1000424,1000427,CFG
+1000427,1000423,CFG
+1000428,1000422,CFG
+1000430,1000421,CFG
+1000431,1000438,CFG
+1000432,1000431,CFG
+1000433,1000436,CFG
+1000436,1000432,CFG
+1000438,1000430,CFG
+1000442,1000474,CFG
+1000444,1000451,CFG
+1000446,1000444,CFG
+1000449,1000454,CFG
+1000451,1000449,CFG
+1000452,1000457,CFG
+1000454,1000452,CFG
+1000455,1000460,CFG
+1000457,1000455,CFG
+1000459,1000466,CFG
+1000460,1000463,CFG
+1000463,1000459,CFG
+1000464,1000442,CFG
+1000465,1000464,CFG
+1000466,1000469,CFG
+1000469,1000465,CFG
+1000471,1000413,CFG
+1000472,1000480,CFG
+1000473,1000472,CFG
+1000474,1000477,CFG
+1000477,1000473,CFG
+1000480,1000484,CFG
+1000482,1000471,CFG
+1000484,1000482,CFG
+1000401,1000407,CFG
+1000401,1000485,DDG
+1000401,1000402,DDG
+1000401,1000403,DDG
+1000401,1000407,DDG
+1000413,1000410,DDGi
+1000407,1000410,DDGi
+1000401,1000410,DDG
+1000418,1000413,DDGi
+1000401,1000413,DDG
+1000418,1000417,DDGi
+1000418,1000417,DDGngx_process_slot
+1000410,1000418,DDGi
+1000401,1000418,DDG
+1000421,1000417,DDGngx_processes[i].pid == -1
+1000421,1000417,DDGngx_processes[i].channel[0] == -1
+1000422,1000421,DDGngx_processes[i].pid
+1000422,1000421,DDG-1
+1000442,1000422,DDGngx_processes[i].pid
+1000430,1000422,DDGngx_processes[i].channel[0]
+1000471,1000422,DDGngx_processes[i].channel[0]
+1000442,1000422,DDGngx_processes[i].channel[0]
+1000401,1000422,DDG
+1000430,1000423,DDGngx_processes[i].channel[0]
+1000442,1000423,DDGngx_processes[i].pid
+1000471,1000423,DDGngx_processes[i].channel[0]
+1000422,1000423,DDGngx_processes[i].pid
+1000442,1000423,DDGngx_processes[i].channel[0]
+1000401,1000423,DDG
+1000430,1000424,DDGngx_processes[i].channel[0]
+1000442,1000424,DDGngx_processes[i].pid
+1000471,1000424,DDGngx_processes[i].channel[0]
+1000422,1000424,DDGngx_processes[i].pid
+1000442,1000424,DDGngx_processes[i].channel[0]
+1000401,1000424,DDG
+1000430,1000422,DDG-1
+1000428,1000422,DDG1
+1000401,1000428,DDG
+1000430,1000421,DDGngx_processes[i].channel[0]
+1000430,1000421,DDG-1
+1000471,1000430,DDGngx_processes[i].channel[0]
+1000442,1000430,DDGngx_processes[i].channel[0]
+1000442,1000430,DDGngx_processes[i].pid
+1000422,1000430,DDGngx_processes[i].pid
+1000401,1000430,DDG
+1000430,1000431,DDGngx_processes[i].channel[0]
+1000471,1000431,DDGngx_processes[i].channel[0]
+1000442,1000431,DDGngx_processes[i].channel[0]
+1000442,1000431,DDGngx_processes[i].pid
+1000422,1000431,DDGngx_processes[i].pid
+1000401,1000431,DDG
+1000430,1000432,DDGngx_processes[i].channel[0]
+1000442,1000432,DDGngx_processes[i].pid
+1000471,1000432,DDGngx_processes[i].channel[0]
+1000422,1000432,DDGngx_processes[i].pid
+1000442,1000432,DDGngx_processes[i].channel[0]
+1000401,1000432,DDG
+1000430,1000433,DDGngx_processes[i].channel[0]
+1000442,1000433,DDGngx_processes[i].pid
+1000471,1000433,DDGngx_processes[i].channel[0]
+1000422,1000433,DDGngx_processes[i].pid
+1000442,1000433,DDGngx_processes[i].channel[0]
+1000401,1000433,DDG
+1000422,1000430,DDG-1
+1000438,1000430,DDG1
+1000401,1000438,DDG
+1000401,1000442,DDG
+1000401,1000444,DDG
+1000471,1000442,DDGch
+1000403,1000442,DDGch
+1000471,1000449,DDGch
+1000403,1000449,DDGch
+1000401,1000449,DDG
+1000401,1000452,DDG
+1000471,1000452,DDGch
+1000403,1000452,DDGch
+1000401,1000455,DDG
+1000471,1000455,DDGch
+1000403,1000455,DDGch
+1000422,1000442,DDGngx_processes[i].pid
+1000430,1000442,DDGngx_processes[i].channel[0]
+1000471,1000442,DDGngx_processes[i].channel[0]
+1000430,1000459,DDGngx_processes[i].channel[0]
+1000442,1000459,DDGngx_processes[i].pid
+1000471,1000459,DDGngx_processes[i].channel[0]
+1000422,1000459,DDGngx_processes[i].pid
+1000442,1000459,DDGngx_processes[i].channel[0]
+1000401,1000459,DDG
+1000430,1000460,DDGngx_processes[i].channel[0]
+1000442,1000460,DDGngx_processes[i].pid
+1000471,1000460,DDGngx_processes[i].channel[0]
+1000422,1000460,DDGngx_processes[i].pid
+1000442,1000460,DDGngx_processes[i].channel[0]
+1000401,1000460,DDG
+1000430,1000464,DDGngx_processes[i].channel[0]
+1000471,1000464,DDGngx_processes[i].channel[0]
+1000442,1000464,DDGngx_processes[i].channel[0]
+1000442,1000464,DDGngx_processes[i].pid
+1000422,1000464,DDGngx_processes[i].pid
+1000401,1000464,DDG
+1000430,1000465,DDGngx_processes[i].channel[0]
+1000442,1000465,DDGngx_processes[i].pid
+1000471,1000465,DDGngx_processes[i].channel[0]
+1000422,1000465,DDGngx_processes[i].pid
+1000442,1000465,DDGngx_processes[i].channel[0]
+1000401,1000465,DDG
+1000430,1000466,DDGngx_processes[i].channel[0]
+1000442,1000466,DDGngx_processes[i].pid
+1000471,1000466,DDGngx_processes[i].channel[0]
+1000422,1000466,DDGngx_processes[i].pid
+1000442,1000466,DDGngx_processes[i].channel[0]
+1000401,1000466,DDG
+1000430,1000471,DDGngx_processes[i].channel[0]
+1000442,1000471,DDGngx_processes[i].channel[0]
+1000442,1000471,DDGngx_processes[i].pid
+1000422,1000471,DDGngx_processes[i].pid
+1000401,1000471,DDG
+1000430,1000472,DDGngx_processes[i].channel[0]
+1000471,1000472,DDGngx_processes[i].channel[0]
+1000442,1000472,DDGngx_processes[i].channel[0]
+1000442,1000472,DDGngx_processes[i].pid
+1000422,1000472,DDGngx_processes[i].pid
+1000401,1000472,DDG
+1000430,1000473,DDGngx_processes[i].channel[0]
+1000442,1000473,DDGngx_processes[i].pid
+1000471,1000473,DDGngx_processes[i].channel[0]
+1000422,1000473,DDGngx_processes[i].pid
+1000442,1000473,DDGngx_processes[i].channel[0]
+1000401,1000473,DDG
+1000430,1000474,DDGngx_processes[i].channel[0]
+1000442,1000474,DDGngx_processes[i].pid
+1000471,1000474,DDGngx_processes[i].channel[0]
+1000422,1000474,DDGngx_processes[i].pid
+1000442,1000474,DDGngx_processes[i].channel[0]
+1000401,1000474,DDG
+1000403,1000471,DDGch
+1000401,1000480,DDG
+1000401,1000482,DDG
+1000410,1000418,CDG
+1000410,1000417,CDG
+1000410,1000413,CDG
+1000410,1000410,CDG
+1000417,1000446,CDG
+1000417,1000444,CDG
+1000417,1000442,CDG
+1000417,1000464,CDG
+1000417,1000463,CDG
+1000417,1000460,CDG
+1000417,1000459,CDG
+1000417,1000457,CDG
+1000417,1000455,CDG
+1000417,1000454,CDG
+1000417,1000452,CDG
+1000417,1000451,CDG
+1000417,1000449,CDG
+1000417,1000480,CDG
+1000417,1000477,CDG
+1000417,1000474,CDG
+1000417,1000473,CDG
+1000417,1000472,CDG
+1000417,1000471,CDG
+1000417,1000469,CDG
+1000417,1000466,CDG
+1000417,1000465,CDG
+1000417,1000484,CDG
+1000417,1000482,CDG
+1000418,1000428,CDG
+1000418,1000427,CDG
+1000418,1000424,CDG
+1000418,1000423,CDG
+1000418,1000422,CDG
+1000418,1000421,CDG
+1000422,1000432,CDG
+1000422,1000431,CDG
+1000422,1000430,CDG
+1000422,1000438,CDG
+1000422,1000436,CDG
+1000422,1000433,CDG

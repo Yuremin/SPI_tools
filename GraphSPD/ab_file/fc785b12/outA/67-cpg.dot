@@ -1,0 +1,16 @@
+digraph ngx_http_upstream_get_local
+--------
+1000481,(COLUMN_NUMBER,0),(LINE_NUMBER,155),(COLUMN_NUMBER_END,37),(IS_EXTERNAL,false),(SIGNATURE,static ngx_addr_t * ngx_http_upstream_get_local (ngx_http_request_t *,ngx_http_upstream_local_t *)),(NAME,ngx_http_upstream_get_local),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_upstream_get_local (ngx_http_request_t *r,ngx_http_upstream_local_t *local)),(FULL_NAME,ngx_http_upstream_get_local),(LINE_NUMBER_END,156),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/fc785b12/a/ngx_http_upstream.c),(METHOD,ngx_http_upstream_get_local)
+1000482,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,47),(LINE_NUMBER,155),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000483,(ORDER,2),(CODE,ngx_http_upstream_local_t *local),(COLUMN_NUMBER,4),(LINE_NUMBER,156),(TYPE_FULL_NAME,ngx_http_upstream_local_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,local),(PARAM,ngx_http_upstream_local_t *local)
+1000484,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000485,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,155),(TYPE_FULL_NAME,static ngx_addr_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_addr_t *)
+--------
+1000481,1000482,AST
+1000481,1000483,AST
+1000481,1000484,AST
+1000481,1000485,AST
+1000481,1000485,CFG
+1000481,1000485,DDG
+1000481,1000482,DDG
+1000481,1000483,DDG

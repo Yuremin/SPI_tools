@@ -1,0 +1,13 @@
+digraph ngx_ssl_write_handler
+--------
+1000185,(COLUMN_NUMBER,0),(LINE_NUMBER,45),(COLUMN_NUMBER_END,51),(IS_EXTERNAL,false),(SIGNATURE,static void ngx_ssl_write_handler (ngx_event_t *)),(NAME,ngx_ssl_write_handler),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_ssl_write_handler (ngx_event_t *wev)),(FULL_NAME,ngx_ssl_write_handler),(LINE_NUMBER_END,45),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/60a8ed26/b/ngx_event_openssl.c),(METHOD,ngx_ssl_write_handler)
+1000186,(ORDER,1),(CODE,ngx_event_t *wev),(COLUMN_NUMBER,34),(LINE_NUMBER,45),(TYPE_FULL_NAME,ngx_event_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,wev),(PARAM,ngx_event_t *wev)
+1000187,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000188,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,45),(TYPE_FULL_NAME,static void),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static void)
+--------
+1000185,1000186,AST
+1000185,1000187,AST
+1000185,1000188,AST
+1000185,1000188,CFG
+1000185,1000188,DDG
+1000185,1000186,DDG

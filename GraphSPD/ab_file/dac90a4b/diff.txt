@@ -1,0 +1,5 @@
+diff -brN -U 0 -p ./ab_file/dac90a4b/a/ngx_buf.c ./ab_file/dac90a4b/b/ngx_buf.c
+--- ./ab_file/dac90a4b/a/ngx_buf.c	2024-04-11 16:21:07.000000000 +0800
++++ ./ab_file/dac90a4b/b/ngx_buf.c	2024-04-11 16:21:07.000000000 +0800
+@@ -139,0 +140 @@ ngx_chain_add_copy(ngx_pool_t *pool, ngx
++            *ll = NULL;

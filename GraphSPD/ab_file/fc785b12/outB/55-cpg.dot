@@ -1,0 +1,19 @@
+digraph ngx_http_upstream_rewrite_location
+--------
+1000417,(COLUMN_NUMBER,0),(LINE_NUMBER,127),(COLUMN_NUMBER_END,42),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_upstream_rewrite_location (ngx_http_request_t *,ngx_table_elt_t *,ngx_uint_t)),(NAME,ngx_http_upstream_rewrite_location),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_upstream_rewrite_location (ngx_http_request_t *r,ngx_table_elt_t *h,ngx_uint_t offset)),(FULL_NAME,ngx_http_upstream_rewrite_location),(LINE_NUMBER_END,128),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/fc785b12/b/ngx_http_upstream.c),(METHOD,ngx_http_upstream_rewrite_location)
+1000418,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,52),(LINE_NUMBER,127),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000419,(ORDER,2),(CODE,ngx_table_elt_t *h),(COLUMN_NUMBER,4),(LINE_NUMBER,128),(TYPE_FULL_NAME,ngx_table_elt_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,h),(PARAM,ngx_table_elt_t *h)
+1000420,(ORDER,3),(CODE,ngx_uint_t offset),(COLUMN_NUMBER,24),(LINE_NUMBER,128),(TYPE_FULL_NAME,ngx_uint_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,offset),(PARAM,ngx_uint_t offset)
+1000421,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000422,(ORDER,5),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,127),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000417,1000418,AST
+1000417,1000419,AST
+1000417,1000420,AST
+1000417,1000421,AST
+1000417,1000422,AST
+1000417,1000422,CFG
+1000417,1000422,DDG
+1000417,1000418,DDG
+1000417,1000419,DDG
+1000417,1000420,DDG

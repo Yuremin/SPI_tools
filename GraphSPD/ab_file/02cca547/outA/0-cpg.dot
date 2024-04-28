@@ -1,0 +1,16 @@
+digraph ngx_signal_worker_processes
+--------
+1000121,(COLUMN_NUMBER,0),(LINE_NUMBER,19),(COLUMN_NUMBER_END,70),(IS_EXTERNAL,false),(SIGNATURE,static void ngx_signal_worker_processes (ngx_cycle_t *,int)),(NAME,ngx_signal_worker_processes),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_signal_worker_processes (ngx_cycle_t *cycle,int signo)),(FULL_NAME,ngx_signal_worker_processes),(LINE_NUMBER_END,19),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/02cca547/a/ngx_process_cycle.c),(METHOD,ngx_signal_worker_processes)
+1000122,(ORDER,1),(CODE,ngx_cycle_t *cycle),(COLUMN_NUMBER,40),(LINE_NUMBER,19),(TYPE_FULL_NAME,ngx_cycle_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(PARAM,ngx_cycle_t *cycle)
+1000123,(ORDER,2),(CODE,int signo),(COLUMN_NUMBER,60),(LINE_NUMBER,19),(TYPE_FULL_NAME,int),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,signo),(PARAM,int signo)
+1000124,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000125,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,19),(TYPE_FULL_NAME,static void),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static void)
+--------
+1000121,1000122,AST
+1000121,1000123,AST
+1000121,1000124,AST
+1000121,1000125,AST
+1000121,1000125,CFG
+1000121,1000125,DDG
+1000121,1000122,DDG
+1000121,1000123,DDG

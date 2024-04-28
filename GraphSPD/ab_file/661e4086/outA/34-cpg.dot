@@ -1,0 +1,13 @@
+digraph ngx_http_upstream_non_buffered_filter_init
+--------
+1000296,(COLUMN_NUMBER,0),(LINE_NUMBER,80),(COLUMN_NUMBER_END,71),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_upstream_non_buffered_filter_init (void *)),(NAME,ngx_http_upstream_non_buffered_filter_init),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_upstream_non_buffered_filter_init (void *data)),(FULL_NAME,ngx_http_upstream_non_buffered_filter_init),(LINE_NUMBER_END,80),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/661e4086/a/ngx_http_upstream.c),(METHOD,ngx_http_upstream_non_buffered_filter_init)
+1000297,(ORDER,1),(CODE,void *data),(COLUMN_NUMBER,60),(LINE_NUMBER,80),(TYPE_FULL_NAME,void *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,data),(PARAM,void *data)
+1000298,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000299,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,80),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000296,1000297,AST
+1000296,1000298,AST
+1000296,1000299,AST
+1000296,1000299,CFG
+1000296,1000299,DDG
+1000296,1000297,DDG

@@ -1,0 +1,13 @@
+digraph ngx_http_alloc_request
+--------
+1000113,(COLUMN_NUMBER,0),(LINE_NUMBER,14),(COLUMN_NUMBER_END,70),(IS_EXTERNAL,false),(SIGNATURE,static ngx_http_request_t * ngx_http_alloc_request (ngx_connection_t *)),(NAME,ngx_http_alloc_request),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_alloc_request (ngx_connection_t *c)),(FULL_NAME,ngx_http_alloc_request),(LINE_NUMBER_END,14),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/bd7dad5b/a/ngx_http_request.c),(METHOD,ngx_http_alloc_request)
+1000114,(ORDER,1),(CODE,ngx_connection_t *c),(COLUMN_NUMBER,50),(LINE_NUMBER,14),(TYPE_FULL_NAME,ngx_connection_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,c),(PARAM,ngx_connection_t *c)
+1000115,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000116,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,14),(TYPE_FULL_NAME,static ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_http_request_t *)
+--------
+1000113,1000114,AST
+1000113,1000115,AST
+1000113,1000116,AST
+1000113,1000116,CFG
+1000113,1000116,DDG
+1000113,1000114,DDG

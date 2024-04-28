@@ -1,0 +1,16 @@
+digraph ngx_ssl_new_client_session
+--------
+1000157,(COLUMN_NUMBER,0),(LINE_NUMBER,31),(COLUMN_NUMBER_END,28),(IS_EXTERNAL,false),(SIGNATURE,static int ngx_ssl_new_client_session (ngx_ssl_conn_t *,ngx_ssl_session_t *)),(NAME,ngx_ssl_new_client_session),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_ssl_new_client_session (ngx_ssl_conn_t *ssl_conn,ngx_ssl_session_t *sess)),(FULL_NAME,ngx_ssl_new_client_session),(LINE_NUMBER_END,32),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/60a8ed26/a/ngx_event_openssl.c),(METHOD,ngx_ssl_new_client_session)
+1000158,(ORDER,1),(CODE,ngx_ssl_conn_t *ssl_conn),(COLUMN_NUMBER,38),(LINE_NUMBER,31),(TYPE_FULL_NAME,ngx_ssl_conn_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ssl_conn),(PARAM,ngx_ssl_conn_t *ssl_conn)
+1000159,(ORDER,2),(CODE,ngx_ssl_session_t *sess),(COLUMN_NUMBER,4),(LINE_NUMBER,32),(TYPE_FULL_NAME,ngx_ssl_session_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,sess),(PARAM,ngx_ssl_session_t *sess)
+1000160,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000161,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,31),(TYPE_FULL_NAME,static int),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static int)
+--------
+1000157,1000158,AST
+1000157,1000159,AST
+1000157,1000160,AST
+1000157,1000161,AST
+1000157,1000161,CFG
+1000157,1000161,DDG
+1000157,1000158,DDG
+1000157,1000159,DDG

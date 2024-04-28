@@ -1,0 +1,19 @@
+digraph ngx_ssl_session_id_context
+--------
+1000208,(COLUMN_NUMBER,0),(LINE_NUMBER,56),(COLUMN_NUMBER_END,51),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_ssl_session_id_context (ngx_ssl_t *,ngx_str_t *,ngx_array_t *)),(NAME,ngx_ssl_session_id_context),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_ssl_session_id_context (ngx_ssl_t *ssl,ngx_str_t *sess_ctx,ngx_array_t *certificates)),(FULL_NAME,ngx_ssl_session_id_context),(LINE_NUMBER_END,57),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/60a8ed26/b/ngx_event_openssl.c),(METHOD,ngx_ssl_session_id_context)
+1000209,(ORDER,1),(CODE,ngx_ssl_t *ssl),(COLUMN_NUMBER,44),(LINE_NUMBER,56),(TYPE_FULL_NAME,ngx_ssl_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ssl),(PARAM,ngx_ssl_t *ssl)
+1000210,(ORDER,2),(CODE,ngx_str_t *sess_ctx),(COLUMN_NUMBER,4),(LINE_NUMBER,57),(TYPE_FULL_NAME,ngx_str_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,sess_ctx),(PARAM,ngx_str_t *sess_ctx)
+1000211,(ORDER,3),(CODE,ngx_array_t *certificates),(COLUMN_NUMBER,25),(LINE_NUMBER,57),(TYPE_FULL_NAME,ngx_array_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,certificates),(PARAM,ngx_array_t *certificates)
+1000212,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000213,(ORDER,5),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,56),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000208,1000209,AST
+1000208,1000210,AST
+1000208,1000211,AST
+1000208,1000212,AST
+1000208,1000213,AST
+1000208,1000213,CFG
+1000208,1000213,DDG
+1000208,1000209,DDG
+1000208,1000210,DDG
+1000208,1000211,DDG

@@ -1,0 +1,13 @@
+digraph ngx_channel_handler
+--------
+1000147,(COLUMN_NUMBER,0),(LINE_NUMBER,25),(COLUMN_NUMBER_END,48),(IS_EXTERNAL,false),(SIGNATURE,static void ngx_channel_handler (ngx_event_t *)),(NAME,ngx_channel_handler),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_channel_handler (ngx_event_t *ev)),(FULL_NAME,ngx_channel_handler),(LINE_NUMBER_END,25),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/02cca547/b/ngx_process_cycle.c),(METHOD,ngx_channel_handler)
+1000148,(ORDER,1),(CODE,ngx_event_t *ev),(COLUMN_NUMBER,32),(LINE_NUMBER,25),(TYPE_FULL_NAME,ngx_event_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ev),(PARAM,ngx_event_t *ev)
+1000149,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000150,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,25),(TYPE_FULL_NAME,static void),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static void)
+--------
+1000147,1000148,AST
+1000147,1000149,AST
+1000147,1000150,AST
+1000147,1000150,CFG
+1000147,1000150,DDG
+1000147,1000148,DDG

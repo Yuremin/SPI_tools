@@ -1,0 +1,13 @@
+digraph ngx_ssl_try_early_data
+--------
+1000162,(COLUMN_NUMBER,0),(LINE_NUMBER,34),(COLUMN_NUMBER_END,60),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_ssl_try_early_data (ngx_connection_t *)),(NAME,ngx_ssl_try_early_data),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_ssl_try_early_data (ngx_connection_t *c)),(FULL_NAME,ngx_ssl_try_early_data),(LINE_NUMBER_END,34),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/60a8ed26/a/ngx_event_openssl.c),(METHOD,ngx_ssl_try_early_data)
+1000163,(ORDER,1),(CODE,ngx_connection_t *c),(COLUMN_NUMBER,40),(LINE_NUMBER,34),(TYPE_FULL_NAME,ngx_connection_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,c),(PARAM,ngx_connection_t *c)
+1000164,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000165,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,34),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000162,1000163,AST
+1000162,1000164,AST
+1000162,1000165,AST
+1000162,1000165,CFG
+1000162,1000165,DDG
+1000162,1000163,DDG

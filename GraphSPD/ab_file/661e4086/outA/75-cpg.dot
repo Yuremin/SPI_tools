@@ -1,0 +1,19 @@
+digraph ngx_http_upstream_cookie_variable
+--------
+1000531,(COLUMN_NUMBER,0),(LINE_NUMBER,169),(COLUMN_NUMBER_END,49),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_upstream_cookie_variable (ngx_http_request_t *,ngx_http_variable_value_t *,uintptr_t)),(NAME,ngx_http_upstream_cookie_variable),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_upstream_cookie_variable (ngx_http_request_t *r,ngx_http_variable_value_t *v,uintptr_t data)),(FULL_NAME,ngx_http_upstream_cookie_variable),(LINE_NUMBER_END,170),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/661e4086/a/ngx_http_upstream.c),(METHOD,ngx_http_upstream_cookie_variable)
+1000532,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,51),(LINE_NUMBER,169),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000533,(ORDER,2),(CODE,ngx_http_variable_value_t *v),(COLUMN_NUMBER,4),(LINE_NUMBER,170),(TYPE_FULL_NAME,ngx_http_variable_value_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,v),(PARAM,ngx_http_variable_value_t *v)
+1000534,(ORDER,3),(CODE,uintptr_t data),(COLUMN_NUMBER,34),(LINE_NUMBER,170),(TYPE_FULL_NAME,uintptr_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,data),(PARAM,uintptr_t data)
+1000535,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000536,(ORDER,5),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,169),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000531,1000532,AST
+1000531,1000533,AST
+1000531,1000534,AST
+1000531,1000535,AST
+1000531,1000536,AST
+1000531,1000536,CFG
+1000531,1000536,DDG
+1000531,1000532,DDG
+1000531,1000533,DDG
+1000531,1000534,DDG

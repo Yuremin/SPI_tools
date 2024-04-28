@@ -1,0 +1,408 @@
+digraph ngx_drain_connections
+--------
+1000107,(COLUMN_NUMBER,0),(LINE_NUMBER,1291),(COLUMN_NUMBER_END,0),(IS_EXTERNAL,false),(SIGNATURE,static void ngx_drain_connections (ngx_cycle_t *)),(NAME,ngx_drain_connections),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_drain_connections (ngx_cycle_t *cycle)),(FULL_NAME,ngx_drain_connections),(LINE_NUMBER_END,1345),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/9a3ec202/a/ngx_connection.c),(METHOD,ngx_drain_connections)
+1000108,(ORDER,1),(CODE,ngx_cycle_t *cycle),(COLUMN_NUMBER,22),(LINE_NUMBER,1292),(TYPE_FULL_NAME,ngx_cycle_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(PARAM,ngx_cycle_t *cycle)
+1000109,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,0),(TYPE_FULL_NAME,void),(LINE_NUMBER,1293),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000110,(TYPE_FULL_NAME,ngx_uint_t),(ORDER,1),(CODE,i),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(LOCAL,i: ngx_uint_t)
+1000111,(TYPE_FULL_NAME,ngx_uint_t),(ORDER,2),(CODE,n),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,n),(LOCAL,n: ngx_uint_t)
+1000112,(TYPE_FULL_NAME,ngx_queue_t *),(ORDER,3),(CODE,q),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,q),(LOCAL,q: ngx_queue_t *)
+1000113,(TYPE_FULL_NAME,ngx_connection_t *),(ORDER,4),(CODE,c),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,c),(LOCAL,c: ngx_connection_t *)
+1000114,(PARSER_TYPE_NAME,IfStatement),(ORDER,5),(LINE_NUMBER,1298),(ARGUMENT_INDEX,5),(CODE,if (cycle->free_connection_n > cycle->connection_n / 16\n        || cycle->reusable_connections_n == 0)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (cycle->free_connection_n > cycle->connection_n / 16\n        || cycle->reusable_connections_n == 0),if (cycle->free_connection_n > cycle->connection_n / 16\n        || cycle->reusable_connections_n == 0))
+1000115,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->free_connection_n > cycle->connection_n / 16\n        || cycle->reusable_connections_n == 0),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.logicalOr),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1298),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.logicalOr),(<operator>.logicalOr,cycle->free_connection_n > cycle->connection_n / 16\n        || cycle->reusable_connections_n == 0)
+1000116,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->free_connection_n > cycle->connection_n / 16),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.greaterThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1298),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.greaterThan),(<operator>.greaterThan,cycle->free_connection_n > cycle->connection_n / 16)
+1000117,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->free_connection_n),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1298),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->free_connection_n)
+1000118,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1298),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,cycle->free_connection_n > cycle->connection_n / 16)
+1000119,(ORDER,2),(LINE_NUMBER,1298),(ARGUMENT_INDEX,2),(CODE,free_connection_n),(COLUMN_NUMBER,15),(CANONICAL_NAME,free_connection_n),(FIELD_IDENTIFIER,free_connection_n,free_connection_n)
+1000120,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,cycle->connection_n / 16),(COLUMN_NUMBER,35),(METHOD_FULL_NAME,<operator>.division),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1298),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.division),(<operator>.division,cycle->connection_n / 16)
+1000121,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->connection_n),(COLUMN_NUMBER,35),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1298),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->connection_n)
+1000122,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,35),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1298),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,cycle->connection_n / 16)
+1000123,(ORDER,2),(LINE_NUMBER,1298),(ARGUMENT_INDEX,2),(CODE,connection_n),(COLUMN_NUMBER,42),(CANONICAL_NAME,connection_n),(FIELD_IDENTIFIER,connection_n,connection_n)
+1000124,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,16),(COLUMN_NUMBER,57),(TYPE_FULL_NAME,int),(LINE_NUMBER,1298),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,16,cycle->connection_n / 16)
+1000125,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,cycle->reusable_connections_n == 0),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.equals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1299),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.equals),(<operator>.equals,cycle->reusable_connections_n == 0)
+1000126,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->reusable_connections_n),(COLUMN_NUMBER,11),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1299),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->reusable_connections_n)
+1000127,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,11),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1299),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,cycle->reusable_connections_n == 0)
+1000128,(ORDER,2),(LINE_NUMBER,1299),(ARGUMENT_INDEX,2),(CODE,reusable_connections_n),(COLUMN_NUMBER,18),(CANONICAL_NAME,reusable_connections_n),(FIELD_IDENTIFIER,reusable_connections_n,reusable_connections_n)
+1000129,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,44),(TYPE_FULL_NAME,int),(LINE_NUMBER,1299),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,cycle->reusable_connections_n == 0)
+1000130,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,void),(LINE_NUMBER,1300),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000131,(ORDER,1),(LINE_NUMBER,1301),(ARGUMENT_INDEX,1),(CODE,return;),(COLUMN_NUMBER,8),(RETURN,return;,return;)
+1000132,(PARSER_TYPE_NAME,IfStatement),(ORDER,6),(LINE_NUMBER,1304),(ARGUMENT_INDEX,6),(CODE,if (cycle->connections_reuse_time != ngx_time())),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,if (cycle->connections_reuse_time != ngx_time()),if (cycle->connections_reuse_time != ngx_time()))
+1000133,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->connections_reuse_time != ngx_time()),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.notEquals),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1304),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.notEquals),(<operator>.notEquals,cycle->connections_reuse_time != ngx_time())
+1000134,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->connections_reuse_time),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1304),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->connections_reuse_time)
+1000135,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1304),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,cycle->connections_reuse_time != ngx_time())
+1000136,(ORDER,2),(LINE_NUMBER,1304),(ARGUMENT_INDEX,2),(CODE,connections_reuse_time),(COLUMN_NUMBER,15),(CANONICAL_NAME,connections_reuse_time),(FIELD_IDENTIFIER,connections_reuse_time,connections_reuse_time)
+1000137,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_time()),(COLUMN_NUMBER,41),(METHOD_FULL_NAME,ngx_time),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1304),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_time),(ngx_time,ngx_time())
+1000138,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,53),(TYPE_FULL_NAME,void),(LINE_NUMBER,1304),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000139,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->connections_reuse_time = ngx_time()),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1305),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,cycle->connections_reuse_time = ngx_time())
+1000140,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->connections_reuse_time),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1305),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->connections_reuse_time)
+1000141,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1305),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,cycle->connections_reuse_time = ngx_time())
+1000142,(ORDER,2),(LINE_NUMBER,1305),(ARGUMENT_INDEX,2),(CODE,connections_reuse_time),(COLUMN_NUMBER,15),(CANONICAL_NAME,connections_reuse_time),(FIELD_IDENTIFIER,connections_reuse_time,connections_reuse_time)
+1000143,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_time()),(COLUMN_NUMBER,40),(METHOD_FULL_NAME,ngx_time),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1305),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_time),(ngx_time,ngx_time())
+1000144,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_log_error(NGX_LOG_WARN, cycle->log, 0,\n                      "%ui worker_connections are not enough, "\n                      "reusing connections",\n                      cycle->connection_n)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,ngx_log_error),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1307),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_log_error),(ngx_log_error,ngx_log_error(NGX_LOG_WARN, cycle->log, 0,\n                      \"%ui worker_connections are not enough, \"\n                      \"reusing connections\",\n                      cycle->connection_n))
+1000145,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NGX_LOG_WARN),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1307),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_LOG_WARN),(IDENTIFIER,NGX_LOG_WARN,ngx_log_error(NGX_LOG_WARN, cycle->log, 0,\n                      \"%ui worker_connections are not enough, \"\n                      \"reusing connections\",\n                      cycle->connection_n))
+1000146,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,cycle->log),(COLUMN_NUMBER,36),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1307),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->log)
+1000147,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,36),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1307),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,ngx_log_error(NGX_LOG_WARN, cycle->log, 0,\n                      \"%ui worker_connections are not enough, \"\n                      \"reusing connections\",\n                      cycle->connection_n))
+1000148,(ORDER,2),(LINE_NUMBER,1307),(ARGUMENT_INDEX,2),(CODE,log),(COLUMN_NUMBER,43),(CANONICAL_NAME,log),(FIELD_IDENTIFIER,log,log)
+1000149,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,0),(COLUMN_NUMBER,48),(TYPE_FULL_NAME,int),(LINE_NUMBER,1307),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ngx_log_error(NGX_LOG_WARN, cycle->log, 0,\n                      \"%ui worker_connections are not enough, \"\n                      \"reusing connections\",\n                      cycle->connection_n))
+1000150,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,"%ui worker_connections are not enough, "\n                      "reusing connections"),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,char *),(LINE_NUMBER,1308),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"%ui worker_connections are not enough, \"\n                      \"reusing connections\",ngx_log_error(NGX_LOG_WARN, cycle->log, 0,\n                      \"%ui worker_connections are not enough, \"\n                      \"reusing connections\",\n                      cycle->connection_n))
+1000151,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,cycle->connection_n),(COLUMN_NUMBER,22),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1310),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->connection_n)
+1000152,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,22),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1310),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,ngx_log_error(NGX_LOG_WARN, cycle->log, 0,\n                      \"%ui worker_connections are not enough, \"\n                      \"reusing connections\",\n                      cycle->connection_n))
+1000153,(ORDER,2),(LINE_NUMBER,1310),(ARGUMENT_INDEX,2),(CODE,connection_n),(COLUMN_NUMBER,29),(CANONICAL_NAME,connection_n),(FIELD_IDENTIFIER,connection_n,connection_n)
+1000154,(ORDER,7),(ARGUMENT_INDEX,7),(CODE,n = ngx_max(ngx_min(32, cycle->reusable_connections_n / 8), 1)),(COLUMN_NUMBER,4),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1314),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,n = ngx_max(ngx_min(32, cycle->reusable_connections_n / 8), 1))
+1000155,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,n),(COLUMN_NUMBER,4),(TYPE_FULL_NAME,ngx_uint_t),(LINE_NUMBER,1314),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,n),(IDENTIFIER,n,n = ngx_max(ngx_min(32, cycle->reusable_connections_n / 8), 1))
+1000156,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_max(ngx_min(32, cycle->reusable_connections_n / 8), 1)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,ngx_max),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1314),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_max),(ngx_max,ngx_max(ngx_min(32, cycle->reusable_connections_n / 8), 1))
+1000157,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_min(32, cycle->reusable_connections_n / 8)),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,ngx_min),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1314),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_min),(ngx_min,ngx_min(32, cycle->reusable_connections_n / 8))
+1000158,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,32),(COLUMN_NUMBER,24),(TYPE_FULL_NAME,int),(LINE_NUMBER,1314),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,32,ngx_min(32, cycle->reusable_connections_n / 8))
+1000159,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,cycle->reusable_connections_n / 8),(COLUMN_NUMBER,28),(METHOD_FULL_NAME,<operator>.division),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1314),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.division),(<operator>.division,cycle->reusable_connections_n / 8)
+1000160,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->reusable_connections_n),(COLUMN_NUMBER,28),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1314),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->reusable_connections_n)
+1000161,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,28),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1314),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,cycle->reusable_connections_n / 8)
+1000162,(ORDER,2),(LINE_NUMBER,1314),(ARGUMENT_INDEX,2),(CODE,reusable_connections_n),(COLUMN_NUMBER,35),(CANONICAL_NAME,reusable_connections_n),(FIELD_IDENTIFIER,reusable_connections_n,reusable_connections_n)
+1000163,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,8),(COLUMN_NUMBER,60),(TYPE_FULL_NAME,int),(LINE_NUMBER,1314),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,8,cycle->reusable_connections_n / 8)
+1000164,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,1),(COLUMN_NUMBER,64),(TYPE_FULL_NAME,int),(LINE_NUMBER,1314),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,ngx_max(ngx_min(32, cycle->reusable_connections_n / 8), 1))
+1000165,(PARSER_TYPE_NAME,ForStatement),(ORDER,8),(LINE_NUMBER,1316),(ARGUMENT_INDEX,8),(CODE,for (i = 0; i < n; i++)),(COLUMN_NUMBER,4),(CONTROL_STRUCTURE,for (i = 0; i < n; i++),for (i = 0; i < n; i++))
+1000166,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i = 0),(COLUMN_NUMBER,9),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1316),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,i = 0)
+1000167,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,9),(TYPE_FULL_NAME,ngx_uint_t),(LINE_NUMBER,1316),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i = 0)
+1000168,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,0),(COLUMN_NUMBER,13),(TYPE_FULL_NAME,int),(LINE_NUMBER,1316),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,i = 0)
+1000169,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,i < n),(COLUMN_NUMBER,16),(METHOD_FULL_NAME,<operator>.lessThan),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1316),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.lessThan),(<operator>.lessThan,i < n)
+1000170,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,16),(TYPE_FULL_NAME,ngx_uint_t),(LINE_NUMBER,1316),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i < n)
+1000171,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,n),(COLUMN_NUMBER,20),(TYPE_FULL_NAME,ngx_uint_t),(LINE_NUMBER,1316),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,n),(IDENTIFIER,n,i < n)
+1000172,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,i++),(COLUMN_NUMBER,23),(METHOD_FULL_NAME,<operator>.postIncrement),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1316),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.postIncrement),(<operator>.postIncrement,i++)
+1000173,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,i),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,ngx_uint_t),(LINE_NUMBER,1316),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,i),(IDENTIFIER,i,i++)
+1000174,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(COLUMN_NUMBER,28),(TYPE_FULL_NAME,void),(LINE_NUMBER,1316),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000175,(PARSER_TYPE_NAME,IfStatement),(ORDER,1),(LINE_NUMBER,1317),(ARGUMENT_INDEX,1),(CODE,if (ngx_queue_empty(&cycle->reusable_connections_queue))),(COLUMN_NUMBER,8),(CONTROL_STRUCTURE,if (ngx_queue_empty(&cycle->reusable_connections_queue)),if (ngx_queue_empty(&cycle->reusable_connections_queue)))
+1000176,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,ngx_queue_empty(&cycle->reusable_connections_queue)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,ngx_queue_empty),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1317),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_queue_empty),(ngx_queue_empty,ngx_queue_empty(&cycle->reusable_connections_queue))
+1000177,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&cycle->reusable_connections_queue),(COLUMN_NUMBER,28),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1317),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&cycle->reusable_connections_queue)
+1000178,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->reusable_connections_queue),(COLUMN_NUMBER,29),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1317),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->reusable_connections_queue)
+1000179,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,29),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1317),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,ngx_queue_empty(&cycle->reusable_connections_queue))
+1000180,(ORDER,2),(LINE_NUMBER,1317),(ARGUMENT_INDEX,2),(CODE,reusable_connections_queue),(COLUMN_NUMBER,36),(CANONICAL_NAME,reusable_connections_queue),(FIELD_IDENTIFIER,reusable_connections_queue,reusable_connections_queue)
+1000181,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(COLUMN_NUMBER,65),(TYPE_FULL_NAME,void),(LINE_NUMBER,1317),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000182,(PARSER_TYPE_NAME,BreakStatement),(ORDER,1),(LINE_NUMBER,1318),(ARGUMENT_INDEX,1),(CODE,break;),(COLUMN_NUMBER,12),(CONTROL_STRUCTURE,break;,break;)
+1000183,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,q = ngx_queue_last(&cycle->reusable_connections_queue)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1321),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,q = ngx_queue_last(&cycle->reusable_connections_queue))
+1000184,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,q),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_queue_t *),(LINE_NUMBER,1321),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,q),(IDENTIFIER,q,q = ngx_queue_last(&cycle->reusable_connections_queue))
+1000185,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_queue_last(&cycle->reusable_connections_queue)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,ngx_queue_last),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1321),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_queue_last),(ngx_queue_last,ngx_queue_last(&cycle->reusable_connections_queue))
+1000186,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,&cycle->reusable_connections_queue),(COLUMN_NUMBER,27),(METHOD_FULL_NAME,<operator>.addressOf),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1321),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.addressOf),(<operator>.addressOf,&cycle->reusable_connections_queue)
+1000187,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle->reusable_connections_queue),(COLUMN_NUMBER,28),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1321),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,cycle->reusable_connections_queue)
+1000188,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,cycle),(COLUMN_NUMBER,28),(TYPE_FULL_NAME,ngx_cycle_t *),(LINE_NUMBER,1321),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,cycle),(IDENTIFIER,cycle,ngx_queue_last(&cycle->reusable_connections_queue))
+1000189,(ORDER,2),(LINE_NUMBER,1321),(ARGUMENT_INDEX,2),(CODE,reusable_connections_queue),(COLUMN_NUMBER,35),(CANONICAL_NAME,reusable_connections_queue),(FIELD_IDENTIFIER,reusable_connections_queue,reusable_connections_queue)
+1000190,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,c = ngx_queue_data(q, ngx_connection_t, queue)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1322),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,c = ngx_queue_data(q, ngx_connection_t, queue))
+1000191,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,c),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_connection_t *),(LINE_NUMBER,1322),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,c),(IDENTIFIER,c,c = ngx_queue_data(q, ngx_connection_t, queue))
+1000192,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_queue_data(q, ngx_connection_t, queue)),(COLUMN_NUMBER,12),(METHOD_FULL_NAME,ngx_queue_data),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1322),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_queue_data),(ngx_queue_data,ngx_queue_data(q, ngx_connection_t, queue))
+1000193,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,q),(COLUMN_NUMBER,27),(TYPE_FULL_NAME,ngx_queue_t *),(LINE_NUMBER,1322),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,q),(IDENTIFIER,q,ngx_queue_data(q, ngx_connection_t, queue))
+1000194,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,ngx_connection_t),(COLUMN_NUMBER,30),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1322),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_connection_t),(IDENTIFIER,ngx_connection_t,ngx_queue_data(q, ngx_connection_t, queue))
+1000195,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,queue),(COLUMN_NUMBER,48),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1322),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,queue),(IDENTIFIER,queue,ngx_queue_data(q, ngx_connection_t, queue))
+1000196,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,ngx_log_debug0(NGX_LOG_DEBUG_CORE, c->log, 0,\n                       "reusing connection")),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,ngx_log_debug0),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1324),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ngx_log_debug0),(ngx_log_debug0,ngx_log_debug0(NGX_LOG_DEBUG_CORE, c->log, 0,\n                       \"reusing connection\"))
+1000197,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,NGX_LOG_DEBUG_CORE),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1324),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,NGX_LOG_DEBUG_CORE),(IDENTIFIER,NGX_LOG_DEBUG_CORE,ngx_log_debug0(NGX_LOG_DEBUG_CORE, c->log, 0,\n                       \"reusing connection\"))
+1000198,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,c->log),(COLUMN_NUMBER,43),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1324),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,c->log)
+1000199,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,c),(COLUMN_NUMBER,43),(TYPE_FULL_NAME,ngx_connection_t *),(LINE_NUMBER,1324),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,c),(IDENTIFIER,c,ngx_log_debug0(NGX_LOG_DEBUG_CORE, c->log, 0,\n                       \"reusing connection\"))
+1000200,(ORDER,2),(LINE_NUMBER,1324),(ARGUMENT_INDEX,2),(CODE,log),(COLUMN_NUMBER,46),(CANONICAL_NAME,log),(FIELD_IDENTIFIER,log,log)
+1000201,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,0),(COLUMN_NUMBER,51),(TYPE_FULL_NAME,int),(LINE_NUMBER,1324),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,0,ngx_log_debug0(NGX_LOG_DEBUG_CORE, c->log, 0,\n                       \"reusing connection\"))
+1000202,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,"reusing connection"),(COLUMN_NUMBER,23),(TYPE_FULL_NAME,char *),(LINE_NUMBER,1325),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,\"reusing connection\",ngx_log_debug0(NGX_LOG_DEBUG_CORE, c->log, 0,\n                       \"reusing connection\"))
+1000203,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,c->close = 1),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.assignment),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1327),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.assignment),(<operator>.assignment,c->close = 1)
+1000204,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,c->close),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1327),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,c->close)
+1000205,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,c),(COLUMN_NUMBER,8),(TYPE_FULL_NAME,ngx_connection_t *),(LINE_NUMBER,1327),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,c),(IDENTIFIER,c,c->close = 1)
+1000206,(ORDER,2),(LINE_NUMBER,1327),(ARGUMENT_INDEX,2),(CODE,close),(COLUMN_NUMBER,11),(CANONICAL_NAME,close),(FIELD_IDENTIFIER,close,close)
+1000207,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,1),(COLUMN_NUMBER,19),(TYPE_FULL_NAME,int),(LINE_NUMBER,1327),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(LITERAL,1,c->close = 1)
+1000208,(ORDER,6),(ARGUMENT_INDEX,6),(CODE,c->read->handler(c->read)),(COLUMN_NUMBER,8),(METHOD_FULL_NAME,c->read->handler),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1328),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,c->read->handler),(c->read->handler,c->read->handler(c->read))
+1000209,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,c->read),(COLUMN_NUMBER,25),(METHOD_FULL_NAME,<operator>.indirectFieldAccess),(TYPE_FULL_NAME,ANY),(LINE_NUMBER,1328),(DISPATCH_TYPE,STATIC_DISPATCH),(SIGNATURE,TODO assignment signature),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,<operator>.indirectFieldAccess),(<operator>.indirectFieldAccess,c->read)
+1000210,(ORDER,1),(ARGUMENT_INDEX,1),(CODE,c),(COLUMN_NUMBER,25),(TYPE_FULL_NAME,ngx_connection_t *),(LINE_NUMBER,1328),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,c),(IDENTIFIER,c,c->read->handler(c->read))
+1000211,(ORDER,2),(LINE_NUMBER,1328),(ARGUMENT_INDEX,2),(CODE,read),(COLUMN_NUMBER,28),(CANONICAL_NAME,read),(FIELD_IDENTIFIER,read,read)
+1000212,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,1291),(TYPE_FULL_NAME,static void),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static void)
+--------
+1000107,1000108,AST
+1000107,1000109,AST
+1000107,1000212,AST
+1000109,1000110,AST
+1000109,1000111,AST
+1000109,1000112,AST
+1000109,1000113,AST
+1000109,1000114,AST
+1000109,1000132,AST
+1000109,1000154,AST
+1000109,1000165,AST
+1000114,1000115,AST
+1000114,1000130,AST
+1000115,1000116,AST
+1000115,1000125,AST
+1000116,1000117,AST
+1000116,1000120,AST
+1000117,1000118,AST
+1000117,1000119,AST
+1000120,1000121,AST
+1000120,1000124,AST
+1000121,1000122,AST
+1000121,1000123,AST
+1000125,1000126,AST
+1000125,1000129,AST
+1000126,1000127,AST
+1000126,1000128,AST
+1000130,1000131,AST
+1000132,1000133,AST
+1000132,1000138,AST
+1000133,1000134,AST
+1000133,1000137,AST
+1000134,1000135,AST
+1000134,1000136,AST
+1000138,1000139,AST
+1000138,1000144,AST
+1000139,1000140,AST
+1000139,1000143,AST
+1000140,1000141,AST
+1000140,1000142,AST
+1000144,1000145,AST
+1000144,1000146,AST
+1000144,1000149,AST
+1000144,1000150,AST
+1000144,1000151,AST
+1000146,1000147,AST
+1000146,1000148,AST
+1000151,1000152,AST
+1000151,1000153,AST
+1000154,1000155,AST
+1000154,1000156,AST
+1000156,1000157,AST
+1000156,1000164,AST
+1000157,1000158,AST
+1000157,1000159,AST
+1000159,1000160,AST
+1000159,1000163,AST
+1000160,1000161,AST
+1000160,1000162,AST
+1000165,1000166,AST
+1000165,1000169,AST
+1000165,1000172,AST
+1000165,1000174,AST
+1000166,1000167,AST
+1000166,1000168,AST
+1000169,1000170,AST
+1000169,1000171,AST
+1000172,1000173,AST
+1000174,1000175,AST
+1000174,1000183,AST
+1000174,1000190,AST
+1000174,1000196,AST
+1000174,1000203,AST
+1000174,1000208,AST
+1000175,1000176,AST
+1000175,1000181,AST
+1000176,1000177,AST
+1000177,1000178,AST
+1000178,1000179,AST
+1000178,1000180,AST
+1000181,1000182,AST
+1000183,1000184,AST
+1000183,1000185,AST
+1000185,1000186,AST
+1000186,1000187,AST
+1000187,1000188,AST
+1000187,1000189,AST
+1000190,1000191,AST
+1000190,1000192,AST
+1000192,1000193,AST
+1000192,1000194,AST
+1000192,1000195,AST
+1000196,1000197,AST
+1000196,1000198,AST
+1000196,1000201,AST
+1000196,1000202,AST
+1000198,1000199,AST
+1000198,1000200,AST
+1000203,1000204,AST
+1000203,1000207,AST
+1000204,1000205,AST
+1000204,1000206,AST
+1000208,1000209,AST
+1000209,1000210,AST
+1000209,1000211,AST
+1000115,1000131,CFG
+1000115,1000136,CFG
+1000116,1000115,CFG
+1000116,1000128,CFG
+1000117,1000123,CFG
+1000119,1000117,CFG
+1000120,1000116,CFG
+1000121,1000120,CFG
+1000123,1000121,CFG
+1000125,1000115,CFG
+1000126,1000125,CFG
+1000128,1000126,CFG
+1000131,1000212,CFG
+1000133,1000142,CFG
+1000133,1000162,CFG
+1000134,1000137,CFG
+1000136,1000134,CFG
+1000137,1000133,CFG
+1000139,1000148,CFG
+1000140,1000143,CFG
+1000142,1000140,CFG
+1000143,1000139,CFG
+1000144,1000162,CFG
+1000146,1000153,CFG
+1000148,1000146,CFG
+1000151,1000144,CFG
+1000153,1000151,CFG
+1000154,1000166,CFG
+1000156,1000154,CFG
+1000157,1000156,CFG
+1000159,1000157,CFG
+1000160,1000159,CFG
+1000162,1000160,CFG
+1000166,1000169,CFG
+1000169,1000212,CFG
+1000169,1000180,CFG
+1000172,1000169,CFG
+1000176,1000212,CFG
+1000176,1000189,CFG
+1000177,1000176,CFG
+1000178,1000177,CFG
+1000180,1000178,CFG
+1000183,1000192,CFG
+1000185,1000183,CFG
+1000186,1000185,CFG
+1000187,1000186,CFG
+1000189,1000187,CFG
+1000190,1000200,CFG
+1000192,1000190,CFG
+1000196,1000206,CFG
+1000198,1000196,CFG
+1000200,1000198,CFG
+1000203,1000211,CFG
+1000204,1000203,CFG
+1000206,1000204,CFG
+1000208,1000172,CFG
+1000209,1000208,CFG
+1000211,1000209,CFG
+1000107,1000119,CFG
+1000131,1000212,DDG<RET>
+1000107,1000212,DDG
+1000107,1000108,DDG
+1000116,1000115,DDGcycle->free_connection_n
+1000116,1000115,DDGcycle->connection_n / 16
+1000107,1000116,DDG
+1000108,1000116,DDGcycle
+1000108,1000117,DDGcycle
+1000107,1000117,DDG
+1000120,1000116,DDGcycle->connection_n
+1000120,1000116,DDG16
+1000107,1000120,DDG
+1000108,1000120,DDGcycle
+1000107,1000121,DDG
+1000108,1000121,DDGcycle
+1000125,1000115,DDGcycle->reusable_connections_n
+1000125,1000115,DDG0
+1000107,1000125,DDG
+1000108,1000125,DDGcycle
+1000107,1000126,DDG
+1000108,1000126,DDGcycle
+1000107,1000131,DDG
+1000107,1000133,DDG
+1000108,1000133,DDGcycle
+1000107,1000134,DDG
+1000108,1000134,DDGcycle
+1000133,1000139,DDGngx_time()
+1000107,1000139,DDG
+1000107,1000140,DDG
+1000108,1000140,DDGcycle
+1000107,1000144,DDG
+1000108,1000144,DDGcycle
+1000107,1000146,DDG
+1000108,1000146,DDGcycle
+1000107,1000151,DDG
+1000108,1000151,DDGcycle
+1000156,1000154,DDGngx_min(32, cycle->reusable_connections_n / 8)
+1000156,1000154,DDG1
+1000107,1000154,DDG
+1000157,1000156,DDG32
+1000157,1000156,DDGcycle->reusable_connections_n / 8
+1000107,1000157,DDG
+1000159,1000157,DDGcycle->reusable_connections_n
+1000159,1000157,DDG8
+1000107,1000159,DDG
+1000108,1000159,DDGcycle
+1000107,1000160,DDG
+1000108,1000160,DDGcycle
+1000107,1000156,DDG
+1000107,1000166,DDG
+1000166,1000169,DDGi
+1000172,1000169,DDGi
+1000107,1000169,DDG
+1000154,1000169,DDGn
+1000169,1000172,DDGi
+1000107,1000172,DDG
+1000185,1000176,DDG&cycle->reusable_connections_queue
+1000107,1000176,DDG
+1000108,1000176,DDGcycle
+1000185,1000177,DDG&cycle->reusable_connections_queue
+1000107,1000177,DDG
+1000108,1000177,DDGcycle
+1000107,1000178,DDG
+1000108,1000178,DDGcycle
+1000185,1000183,DDG&cycle->reusable_connections_queue
+1000107,1000183,DDG
+1000176,1000185,DDG&cycle->reusable_connections_queue
+1000107,1000185,DDG
+1000176,1000186,DDG&cycle->reusable_connections_queue
+1000107,1000186,DDG
+1000107,1000187,DDG
+1000192,1000190,DDGq
+1000192,1000190,DDGngx_connection_t
+1000192,1000190,DDGqueue
+1000107,1000190,DDG
+1000183,1000192,DDGq
+1000107,1000192,DDG
+1000107,1000196,DDG
+1000190,1000196,DDGc
+1000190,1000198,DDGc
+1000107,1000198,DDG
+1000107,1000203,DDG
+1000107,1000204,DDG
+1000190,1000204,DDGc
+1000107,1000208,DDG
+1000190,1000208,DDGc
+1000107,1000209,DDG
+1000190,1000209,DDGc
+1000115,1000169,CDG
+1000115,1000166,CDG
+1000115,1000162,CDG
+1000115,1000137,CDG
+1000115,1000136,CDG
+1000115,1000134,CDG
+1000115,1000133,CDG
+1000115,1000131,CDG
+1000115,1000160,CDG
+1000115,1000159,CDG
+1000115,1000157,CDG
+1000115,1000156,CDG
+1000115,1000154,CDG
+1000116,1000128,CDG
+1000116,1000126,CDG
+1000116,1000125,CDG
+1000133,1000144,CDG
+1000133,1000143,CDG
+1000133,1000142,CDG
+1000133,1000140,CDG
+1000133,1000139,CDG
+1000133,1000153,CDG
+1000133,1000151,CDG
+1000133,1000148,CDG
+1000133,1000146,CDG
+1000169,1000176,CDG
+1000169,1000180,CDG
+1000169,1000178,CDG
+1000169,1000177,CDG
+1000176,1000172,CDG
+1000176,1000169,CDG
+1000176,1000192,CDG
+1000176,1000190,CDG
+1000176,1000189,CDG
+1000176,1000187,CDG
+1000176,1000186,CDG
+1000176,1000185,CDG
+1000176,1000183,CDG
+1000176,1000208,CDG
+1000176,1000206,CDG
+1000176,1000204,CDG
+1000176,1000203,CDG
+1000176,1000200,CDG
+1000176,1000198,CDG
+1000176,1000196,CDG
+1000176,1000211,CDG
+1000176,1000209,CDG

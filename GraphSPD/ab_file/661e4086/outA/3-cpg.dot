@@ -1,0 +1,16 @@
+digraph ngx_http_upstream_cache_background_update
+--------
+1000139,(COLUMN_NUMBER,0),(LINE_NUMBER,20),(COLUMN_NUMBER_END,50),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_upstream_cache_background_update (ngx_http_request_t *,ngx_http_upstream_t *)),(NAME,ngx_http_upstream_cache_background_update),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_upstream_cache_background_update (ngx_http_request_t *r,ngx_http_upstream_t *u)),(FULL_NAME,ngx_http_upstream_cache_background_update),(LINE_NUMBER_END,21),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/661e4086/a/ngx_http_upstream.c),(METHOD,ngx_http_upstream_cache_background_update)
+1000140,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,4),(LINE_NUMBER,21),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000141,(ORDER,2),(CODE,ngx_http_upstream_t *u),(COLUMN_NUMBER,27),(LINE_NUMBER,21),(TYPE_FULL_NAME,ngx_http_upstream_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(PARAM,ngx_http_upstream_t *u)
+1000142,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000143,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,20),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000139,1000140,AST
+1000139,1000141,AST
+1000139,1000142,AST
+1000139,1000143,AST
+1000139,1000143,CFG
+1000139,1000143,DDG
+1000139,1000140,DDG
+1000139,1000141,DDG

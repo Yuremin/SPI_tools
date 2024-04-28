@@ -1,0 +1,19 @@
+digraph ngx_http_send_special_response
+--------
+1000133,(COLUMN_NUMBER,0),(LINE_NUMBER,16),(COLUMN_NUMBER_END,51),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_send_special_response (ngx_http_request_t *,ngx_http_core_loc_conf_t *,ngx_uint_t)),(NAME,ngx_http_send_special_response),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_send_special_response (ngx_http_request_t *r,ngx_http_core_loc_conf_t *clcf,ngx_uint_t err)),(FULL_NAME,ngx_http_send_special_response),(LINE_NUMBER_END,17),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/56f53316/b/ngx_http_special_response.c),(METHOD,ngx_http_send_special_response)
+1000134,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,48),(LINE_NUMBER,16),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000135,(ORDER,2),(CODE,ngx_http_core_loc_conf_t *clcf),(COLUMN_NUMBER,4),(LINE_NUMBER,17),(TYPE_FULL_NAME,ngx_http_core_loc_conf_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,clcf),(PARAM,ngx_http_core_loc_conf_t *clcf)
+1000136,(ORDER,3),(CODE,ngx_uint_t err),(COLUMN_NUMBER,36),(LINE_NUMBER,17),(TYPE_FULL_NAME,ngx_uint_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,err),(PARAM,ngx_uint_t err)
+1000137,(ORDER,4),(ARGUMENT_INDEX,4),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000138,(ORDER,5),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,16),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000133,1000134,AST
+1000133,1000135,AST
+1000133,1000136,AST
+1000133,1000137,AST
+1000133,1000138,AST
+1000133,1000138,CFG
+1000133,1000138,DDG
+1000133,1000134,DDG
+1000133,1000135,DDG
+1000133,1000136,DDG

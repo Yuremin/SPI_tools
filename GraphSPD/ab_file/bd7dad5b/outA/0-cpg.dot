@@ -1,0 +1,13 @@
+digraph ngx_http_wait_request_handler
+--------
+1000109,(COLUMN_NUMBER,0),(LINE_NUMBER,13),(COLUMN_NUMBER_END,58),(IS_EXTERNAL,false),(SIGNATURE,static void ngx_http_wait_request_handler (ngx_event_t *)),(NAME,ngx_http_wait_request_handler),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_wait_request_handler (ngx_event_t *ev)),(FULL_NAME,ngx_http_wait_request_handler),(LINE_NUMBER_END,13),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/bd7dad5b/a/ngx_http_request.c),(METHOD,ngx_http_wait_request_handler)
+1000110,(ORDER,1),(CODE,ngx_event_t *ev),(COLUMN_NUMBER,42),(LINE_NUMBER,13),(TYPE_FULL_NAME,ngx_event_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,ev),(PARAM,ngx_event_t *ev)
+1000111,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000112,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,13),(TYPE_FULL_NAME,static void),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static void)
+--------
+1000109,1000110,AST
+1000109,1000111,AST
+1000109,1000112,AST
+1000109,1000112,CFG
+1000109,1000112,DDG
+1000109,1000110,DDG

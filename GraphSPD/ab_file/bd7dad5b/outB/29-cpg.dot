@@ -1,0 +1,22 @@
+digraph ngx_http_log_error_handler
+--------
+1000253,(COLUMN_NUMBER,0),(LINE_NUMBER,59),(COLUMN_NUMBER_END,52),(IS_EXTERNAL,false),(SIGNATURE,static u_char * ngx_http_log_error_handler (ngx_http_request_t *,ngx_http_request_t *,u_char *,size_t)),(NAME,ngx_http_log_error_handler),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_log_error_handler (ngx_http_request_t *r,ngx_http_request_t *sr,u_char *buf,size_t len)),(FULL_NAME,ngx_http_log_error_handler),(LINE_NUMBER_END,60),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/bd7dad5b/b/ngx_http_request.c),(METHOD,ngx_http_log_error_handler)
+1000254,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,42),(LINE_NUMBER,59),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000255,(ORDER,2),(CODE,ngx_http_request_t *sr),(COLUMN_NUMBER,4),(LINE_NUMBER,60),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,sr),(PARAM,ngx_http_request_t *sr)
+1000256,(ORDER,3),(CODE,u_char *buf),(COLUMN_NUMBER,28),(LINE_NUMBER,60),(TYPE_FULL_NAME,u_char *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,buf),(PARAM,u_char *buf)
+1000257,(ORDER,4),(CODE,size_t len),(COLUMN_NUMBER,41),(LINE_NUMBER,60),(TYPE_FULL_NAME,size_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,len),(PARAM,size_t len)
+1000258,(ORDER,5),(ARGUMENT_INDEX,5),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000259,(ORDER,6),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,59),(TYPE_FULL_NAME,static u_char *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static u_char *)
+--------
+1000253,1000254,AST
+1000253,1000255,AST
+1000253,1000256,AST
+1000253,1000257,AST
+1000253,1000258,AST
+1000253,1000259,AST
+1000253,1000259,CFG
+1000253,1000259,DDG
+1000253,1000254,DDG
+1000253,1000255,DDG
+1000253,1000256,DDG
+1000253,1000257,DDG

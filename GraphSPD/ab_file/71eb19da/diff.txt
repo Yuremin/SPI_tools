@@ -1,0 +1,133 @@
+diff -brN -U 0 -p ./ab_file/71eb19da/a/ngx_errno.c ./ab_file/71eb19da/b/ngx_errno.c
+--- ./ab_file/71eb19da/a/ngx_errno.c	2024-04-11 16:21:09.000000000 +0800
++++ ./ab_file/71eb19da/b/ngx_errno.c	2024-04-11 16:21:09.000000000 +0800
+@@ -29,0 +30,2 @@ static ngx_str_t   ngx_unknown_error = n
++static ngx_err_t   ngx_first_error;
++static ngx_err_t   ngx_last_error;
+@@ -37,2 +39,7 @@ ngx_strerror(ngx_err_t err, u_char *errs
+-    msg = ((ngx_uint_t) err < NGX_SYS_NERR) ? &ngx_sys_errlist[err]:
+-                                              &ngx_unknown_error;
++    if (err >= ngx_first_error && err < ngx_last_error) {
++        msg = &ngx_sys_errlist[err - ngx_first_error];
++
++    } else {
++        msg = &ngx_unknown_error;
++    }
++
+@@ -52,0 +60,66 @@ ngx_strerror_init(void)
++#if (NGX_SYS_NERR)
++    ngx_first_error = 0;
++    ngx_last_error = NGX_SYS_NERR;
++
++#elif (EPERM > 1000 && EPERM < 0x7fffffff - 1000)
++
++    /*
++     * If number of errors is not known, and EPERM error code has large
++     * but reasonable value, guess possible error codes based on the error
++     * messages returned by strerror(), starting from EPERM.  Notably,
++     * this covers GNU/Hurd, where errors start at 0x40000001.
++     */
++
++    for (err = EPERM; err > EPERM - 1000; err--) {
++        ngx_set_errno(0);
++        msg = strerror(err);
++
++        if (errno == EINVAL
++            || msg == NULL
++            || strncmp(msg, "Unknown error", 13) == 0)
++        {
++            continue;
++        }
++
++        ngx_first_error = err;
++    }
++
++    for (err = EPERM; err < EPERM + 1000; err++) {
++        ngx_set_errno(0);
++        msg = strerror(err);
++
++        if (errno == EINVAL
++            || msg == NULL
++            || strncmp(msg, "Unknown error", 13) == 0)
++        {
++            continue;
++        }
++
++        ngx_last_error = err + 1;
++    }
++
++#else
++
++    /*
++     * If number of errors is not known, guess it based on the error
++     * messages returned by strerror().
++     */
++
++    ngx_first_error = 0;
++
++    for (err = 0; err < 1000; err++) {
++        ngx_set_errno(0);
++        msg = strerror(err);
++
++        if (errno == EINVAL
++            || msg == NULL
++            || strncmp(msg, "Unknown error", 13) == 0)
++        {
++            continue;
++        }
++
++        ngx_last_error = err + 1;
++    }
++
++#endif
++
+@@ -58 +131 @@ ngx_strerror_init(void)
+-    len = NGX_SYS_NERR * sizeof(ngx_str_t);
++    len = (ngx_last_error - ngx_first_error) * sizeof(ngx_str_t);
+@@ -65 +138 @@ ngx_strerror_init(void)
+-    for (err = 0; err < NGX_SYS_NERR; err++) {
++    for (err = ngx_first_error; err < ngx_last_error; err++) {
+@@ -66,0 +140,6 @@ ngx_strerror_init(void)
++
++        if (msg == NULL) {
++            ngx_sys_errlist[err - ngx_first_error] = ngx_unknown_error;
++            continue;
++        }
++
+@@ -75,2 +154,2 @@ ngx_strerror_init(void)
+-        ngx_sys_errlist[err].len = len;
+-        ngx_sys_errlist[err].data = p;
++        ngx_sys_errlist[err - ngx_first_error].len = len;
++        ngx_sys_errlist[err - ngx_first_error].data = p;
+diff -brN -U 0 -p ./ab_file/71eb19da/a/unix ./ab_file/71eb19da/b/unix
+--- ./ab_file/71eb19da/a/unix	2024-04-11 16:21:09.000000000 +0800
++++ ./ab_file/71eb19da/b/unix	2024-04-11 16:21:09.000000000 +0800
+@@ -756,28 +755,0 @@ fi
+-if [ $ngx_found = no ]; then
+-
+-    # Solaris has no sys_nerr
+-    ngx_feature='maximum errno'
+-    ngx_feature_name=NGX_SYS_NERR
+-    ngx_feature_run=value
+-    ngx_feature_incs='#include <errno.h>
+-                      #include <string.h>
+-                      #include <stdio.h>'
+-    ngx_feature_path=
+-    ngx_feature_libs=
+-    ngx_feature_test='int  n;
+-                      char *p;
+-                      for (n = 1; n < 1000; n++) {
+-                          errno = 0;
+-                          p = strerror(n);
+-                          if (errno == EINVAL
+-                              || p == NULL
+-                              || strncmp(p, "Unknown error", 13) == 0)
+-                          {
+-                              break;
+-                          }
+-                      }
+-                      printf("%d", n);'
+-    . auto/feature
+-fi
+-
+-

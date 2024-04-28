@@ -1,0 +1,13 @@
+digraph ngx_http_upstream_cleanup
+--------
+1000299,(COLUMN_NUMBER,0),(LINE_NUMBER,84),(COLUMN_NUMBER_END,49),(IS_EXTERNAL,false),(SIGNATURE,static void ngx_http_upstream_cleanup (void *)),(NAME,ngx_http_upstream_cleanup),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_upstream_cleanup (void *data)),(FULL_NAME,ngx_http_upstream_cleanup),(LINE_NUMBER_END,84),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/fc785b12/a/ngx_http_upstream.c),(METHOD,ngx_http_upstream_cleanup)
+1000300,(ORDER,1),(CODE,void *data),(COLUMN_NUMBER,38),(LINE_NUMBER,84),(TYPE_FULL_NAME,void *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,data),(PARAM,void *data)
+1000301,(ORDER,2),(ARGUMENT_INDEX,2),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000302,(ORDER,3),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,84),(TYPE_FULL_NAME,static void),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static void)
+--------
+1000299,1000300,AST
+1000299,1000301,AST
+1000299,1000302,AST
+1000299,1000302,CFG
+1000299,1000302,DDG
+1000299,1000300,DDG

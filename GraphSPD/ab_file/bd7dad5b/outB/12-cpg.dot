@@ -1,0 +1,16 @@
+digraph ngx_http_set_virtual_server
+--------
+1000176,(COLUMN_NUMBER,0),(LINE_NUMBER,36),(COLUMN_NUMBER_END,20),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_set_virtual_server (ngx_http_request_t *,ngx_str_t *)),(NAME,ngx_http_set_virtual_server),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_set_virtual_server (ngx_http_request_t *r,ngx_str_t *host)),(FULL_NAME,ngx_http_set_virtual_server),(LINE_NUMBER_END,37),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/bd7dad5b/b/ngx_http_request.c),(METHOD,ngx_http_set_virtual_server)
+1000177,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,45),(LINE_NUMBER,36),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000178,(ORDER,2),(CODE,ngx_str_t *host),(COLUMN_NUMBER,4),(LINE_NUMBER,37),(TYPE_FULL_NAME,ngx_str_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,host),(PARAM,ngx_str_t *host)
+1000179,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000180,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,36),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000176,1000177,AST
+1000176,1000178,AST
+1000176,1000179,AST
+1000176,1000180,AST
+1000176,1000180,CFG
+1000176,1000180,DDG
+1000176,1000177,DDG
+1000176,1000178,DDG

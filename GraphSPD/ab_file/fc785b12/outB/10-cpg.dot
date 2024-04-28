@@ -1,0 +1,16 @@
+digraph ngx_http_upstream_reinit
+--------
+1000169,(COLUMN_NUMBER,0),(LINE_NUMBER,34),(COLUMN_NUMBER_END,27),(IS_EXTERNAL,false),(SIGNATURE,static ngx_int_t ngx_http_upstream_reinit (ngx_http_request_t *,ngx_http_upstream_t *)),(NAME,ngx_http_upstream_reinit),(AST_PARENT_TYPE,),(AST_PARENT_FULL_NAME,),(ORDER,-1),(CODE,ngx_http_upstream_reinit (ngx_http_request_t *r,ngx_http_upstream_t *u)),(FULL_NAME,ngx_http_upstream_reinit),(LINE_NUMBER_END,35),(FILENAME,/Users/min/Code/SPI/Baselines/GraphSPD/ab_file/fc785b12/b/ngx_http_upstream.c),(METHOD,ngx_http_upstream_reinit)
+1000170,(ORDER,1),(CODE,ngx_http_request_t *r),(COLUMN_NUMBER,42),(LINE_NUMBER,34),(TYPE_FULL_NAME,ngx_http_request_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,r),(PARAM,ngx_http_request_t *r)
+1000171,(ORDER,2),(CODE,ngx_http_upstream_t *u),(COLUMN_NUMBER,4),(LINE_NUMBER,35),(TYPE_FULL_NAME,ngx_http_upstream_t *),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(NAME,u),(PARAM,ngx_http_upstream_t *u)
+1000172,(ORDER,3),(ARGUMENT_INDEX,3),(CODE,),(TYPE_FULL_NAME,void),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(BLOCK,,)
+1000173,(ORDER,4),(CODE,RET),(COLUMN_NUMBER,0),(LINE_NUMBER,34),(TYPE_FULL_NAME,static ngx_int_t),(EVALUATION_STRATEGY,BY_VALUE),(DYNAMIC_TYPE_HINT_FULL_NAME,List()),(METHOD_RETURN,static ngx_int_t)
+--------
+1000169,1000170,AST
+1000169,1000171,AST
+1000169,1000172,AST
+1000169,1000173,AST
+1000169,1000173,CFG
+1000169,1000173,DDG
+1000169,1000170,DDG
+1000169,1000171,DDG

@@ -1,0 +1,37 @@
+(-8, -13, 'DDGu', 1)
+(-20, -36, 'CDG', 1)
+(-8, -31, 'DDGu', 1)
+(-20, -29, 'CDG', 1)
+(-8, -20, 'DDGu', 1)
+(-20, -31, 'CDG', 1)
+===========================
+(-2, 1, '-', 0, '+4148', 'ngx_http_upstream_process_vary (ngx_http_request_t *r,ngx_table_elt_t *h,ngx_uint_t offset)')
+(-36, 1, '-', 0, '+4167', 'return NGX_OK;')
+(-31, 1, '-', 0, '+4163', 'u->cacheable = 0')
+(-20, 1, '-', 0, '+4159', 'if (u->conf->ignore_headers & NGX_HTTP_UPSTREAM_IGN_VARY)')
+(-4, 1, '-', 0, '+4150', 'ngx_table_elt_t *h')
+(-8, 1, '-', 0, '+4154', 'u = r->upstream')
+(-3, 1, '-', 0, '+4149', 'ngx_http_request_t *r')
+(-29, 1, '-', 0, '+4160', 'return NGX_OK;')
+(-13, 1, '-', 0, '+4155', 'u->headers_in.vary = h')
+---------------------------
+
+===========================
+
+---------------------------
+(-8, -13, 'DDGu', 1)
+(-20, -36, 'CDG', 1)
+(-8, -31, 'DDGu', 1)
+(-20, -29, 'CDG', 1)
+(-8, -20, 'DDGu', 1)
+(-20, -31, 'CDG', 1)
+===========================
+(-2, 1, '-', 0, '+4148', 'ngx_http_upstream_process_vary (ngx_http_request_t *r,ngx_table_elt_t *h,ngx_uint_t offset)')
+(-36, 1, '-', 0, '+4167', 'return NGX_OK;')
+(-31, 1, '-', 0, '+4163', 'u->cacheable = 0')
+(-20, 1, '-', 0, '+4159', 'if (u->conf->ignore_headers & NGX_HTTP_UPSTREAM_IGN_VARY)')
+(-4, 1, '-', 0, '+4150', 'ngx_table_elt_t *h')
+(-8, 1, '-', 0, '+4154', 'u = r->upstream')
+(-3, 1, '-', 0, '+4149', 'ngx_http_request_t *r')
+(-29, 1, '-', 0, '+4160', 'return NGX_OK;')
+(-13, 1, '-', 0, '+4155', 'u->headers_in.vary = h')
